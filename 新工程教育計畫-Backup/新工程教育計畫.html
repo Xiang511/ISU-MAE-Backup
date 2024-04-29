@@ -1,0 +1,584 @@
+<link rel="stylesheet" href="../newsite/css/new.css" media="screen">
+<!-- <link rel="stylesheet" href="../upload/826/18/code/all_min.css"> -->
+<script src="../upload/826/18/code/card_script.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+<Style type="text/css">
+  .u-section-4 .u-image-1 {
+    background-image: url(../upload/826/18/homepage_image/smart_factory1.jpg);
+  }
+
+  .u-section-4 .u-image-2 {
+    background-image: url(../upload/826/18/homepage_image/AI_photo1.jpg);
+  }
+
+  .u-section-4 .u-image-3 {
+    background-image: url(../upload/826/18/homepage_image/smart_factory.jpg);
+  }
+
+  .u-section-4 .u-image-4 {
+    background-image: url(../upload/826/18/homepage_image/AI_photo.jpg);
+  }
+
+  .u-section-4 .u-image-zero_carbon {
+    background-image: url(../upload/826/18/homepage_image/Zero_Carbon.png);
+    max-width: 100% !important; 
+    height:auto !important;
+    background-size: cover;
+    transition: background 0.5s ease; /* 背景及圖片漸變時間 */
+  }
+  .u-section-4 .u-image-zero_carbon:hover {
+    background-image: url('../upload/826/18/homepage_image/container/container.png'); /* 漸變後的圖片 */
+    }
+
+
+  .u-container-style-background:not([class*="u-align-"]) {
+    text-align: left;
+  }
+  
+  .featurePost-color-purple {
+    display: flex;
+    position: relative;
+}
+
+  .featurePost-color-purple:hover{
+    background-color: mediumorchid;
+    transition: background 0.5s ease;
+  }
+
+  
+
+  .shadow-border {
+        box-shadow: 5px 5px 10px #888; /* 設定陰影，水平偏移量5px，垂直偏移量5px，模糊度10px，顏色#888 */
+    }
+
+  .color-word {
+    color: rgb(131, 239, 249);
+  }
+
+  .color-word:hover {
+    color: hsla(183, 85%, 57%, 0.639);
+    opacity: 0.5s;
+    transition: 0.5s;
+  }
+
+
+  .wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+  }
+
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+
+  .wrapper i:active {
+    transform: translateY(-50%) scale(0.85);
+  }
+
+  .wrapper i:first-child {
+    left: -22px;
+  }
+
+  .wrapper i:last-child {
+    right: -22px;
+  }
+
+  /* 從直向轉為橫向 */
+  .wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+
+  .carousel .card .img {
+    background: #8B53FF;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+  }
+
+  .card .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+  }
+
+  .carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+  }
+
+
+  .head01 {
+    margin-top: 60px;
+  }
+
+/*
+  .head01 {
+    font-family: NotoSansTC-Regular;
+    font-size: 1.5rem;
+    font-style: normal;
+    margin: 30px auto 0 0px;
+    border-color: #2cccc4;
+    border-left: 4px solid #2cccc4;
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 600;
+} */
+
+
+
+</style>
+
+<script>
+  function createNewPage(web) {
+    window.open(web, "_blank");
+  }
+</script>
+
+
+<div class="head01">新工程計畫簡介</div>
+
+<p style="text-align:justify;"><span style="font-size: large;">　　義守大學工學院為貫徹「培養具科技運用、跨域創新、永續理念與倫理素養之工程人才」之教育目標，參與了112-116年教育部資科司推動的
+
+    <span style="color:#e66689;font-weight:bold;">「新工程教育方法實驗與建構計畫-C類計畫」</span>
+
+    ，成為五所學校中，唯一的南臺灣代表。為落實新工程教育理念於整體學院，以「永續工程設計與實踐」為主軸，推動
+
+    <span style="color:#e66689;font-weight:bold;">四個主題式課群</span>
+
+    <span style="color:#4ac1ad;font-weight:bold;">(綠色工程材料、新穎綠色節能材料科技與工程之應用、智慧節能裝置設計與製造、永續工程實作)</span>
+
+    ，並同時在校園內新設置
+
+    <span style="color:#e66689;font-weight:bold;">四座「零碳節能窩(Zero Carbon Wards)」</span>
+
+    作為主要成果實踐場域，從實踐教學創新、建立教師社群做起，翻轉傳統工程教育模式，從而培養出具人文設計美學素養、獨創思維與技能、
+
+    兼顧工程專業基礎知識及實踐能力，勇於嘗試、開創新議題，並能運用設計思考及跨領域團隊合作解決實際問題的優秀工程人才。</p></span></p>
+
+
+<!-- 計畫執行團隊 -->
+<div class="head01">計畫執行團隊</div>
+<div class="wrapper">
+  <i id="left" class="fa-solid fa-angle-left"></i>
+  <ul class="carousel">
+
+    <!-- 林國良 -->
+    <li class="card">
+      <div class="img"><img src="../upload/828/teacher-img/3-1.jpg" alt="img" draggable="false"></div>
+      <h2>林國良 <span class="a-personal-card__job">院長</span></h2>
+      <p style="font-size: 13px; margin: 10px; color: gray;">學歷：美國德州大學奧斯汀分校博士</p>
+      <p><a href="https://www.isu.edu.tw/newsite/deptfa.php?dept_mno=828&dept_id=3&aid=18814"
+          style="color:hsla(183, 85%, 40%, 0.639); margin: 10px; font-size: 14px;"> 了解更多 </a></p>
+    </li>
+
+    <!-- 翁誌煌系主任 -->
+    <li class="card">
+      <div class="img"><img src="../upload/828/teacher-img/0.jpg" alt="img" draggable="false"></div>
+      <h2>翁誌煌 <span class="a-personal-card__job">系主任</span></h2>
+      <p style="font-size: 13px; margin: 10px; color: gray;">學歷：美國德拉瓦大學博士</p>
+      <p><a href="https://www.isu.edu.tw/newsite/deptfa.php?dept_mno=828&dept_id=3&aid=18334"
+          style="color:hsla(183, 85%, 40%, 0.639); font-size: 14px;"> 了解更多 </a></p>
+    </li>
+
+    <!-- 王惠森系主任 -->
+    <li class="card">
+      <div class="img"><img src="../upload/personalphoto/personalphotos_808A001.jpg" alt="img" draggable="false"></div>
+      <h2>王惠森 <span class="a-personal-card__job">系主任</span></h2>
+      <p style="font-size: 13px; margin: 10px; color: gray;">學歷：英國羅伯戈登大學機械工程所（材料組）博士</p>
+      <p><a href="https://www.isu.edu.tw/newsite/showpage.php?dept_mno=829&dept_id=-1&page_id=44757"
+          style="color:hsla(183, 85%, 40%, 0.639); font-size: 12px;"> 了解更多 </a></p>
+    </li>
+
+    <!-- 洪添燦系主任 -->
+    <li class="card">
+      <div class="img"><img src="../upload/830/images/teacher/2nd/tthung.jpg" alt="img" draggable="false"></div>
+      <h2>洪添燦 <span class="a-personal-card__job">系主任</span></h2>
+      <p style="font-size: 13px; margin: 10px; color: gray;">學歷：國立清華大學化學工程研究所博士</ㄣ>
+      <p><a href="http://www.che.isu.edu.tw/newsite/deptfa.php?dept_mno=830&dept_id=17&aid=19263"
+          style="color:hsla(183, 85%, 40%, 0.639); font-size: 12px;"> 了解更多 </a></p>
+    </li>
+
+    <!-- 陳建霖教授 -->
+    <li class="card">
+      <div class="img"><img src="../upload/personalphoto/personalphotos_A000001.jpg" alt="img" draggable="false"></div>
+      <h2>陳建霖 <span class="a-personal-card__job">教授</span></h2>
+      <p style="font-size: 13px; margin: 10px; color: gray;">學歷：國立成功大學航空太空研究所博士</ㄣ>
+      <p><a href="http://paper.isu.edu.tw/paper/class_paper.php?user_id=19162&dep_id=81201&type=1&lang_type=tw"
+          style="color: hsla(183, 85%, 40%, 0.639); font-size: 12px;">
+          了解更多</a></p>
+    </li>
+
+    <!-- 陳厚光教授 -->
+    <li class="card">
+      <div class="img"><img src="../upload/personalphoto/personalphotos_808A007.jpg" alt="img" draggable="false"></div>
+      <h2>陳厚光 <span class="a-personal-card__job">教授</span></h2>
+      <p style="font-size: 13px; margin: 10px; color: gray;">學歷：國立交通大學材料博士</ㄣ>
+      <p><a href="https://www.isu.edu.tw/newsite/showpage.php?dept_mno=829&dept_id=0&page_id=44841"
+          style="color:  hsla(183, 85%, 40%, 0.639); font-size: 12px;"> 了解更多 </a></p>
+    </li>
+
+    <!-- 洪志勳教授 -->
+    <li class="card">
+      <div class="img"><img src="../upload/830/images/teacher/2nd/chhung.jpg" alt="img" draggable="false"></div>
+      <h2>洪志勳 <span class="a-personal-card__job">教授</span></h2>
+      <p style="font-size: 13px; margin: 10px; color: gray;">學歷：國立中興大學分子生物學博士</p>
+      <p><a href="http://www.che.isu.edu.tw/newsite/deptfa.php?dept_mno=830&dept_id=17&aid=19159"
+          style="color: hsla(183, 85%, 40%, 0.639); font-size: 12px;"> 了解更多 </a></p>
+    </li>
+
+    <!-- 顏仲崑助理教授 -->
+    <li class="card">
+      <div class="img"><img src="../upload/personalphoto/personalphotos_A000004.jpg" alt="img" draggable="false"></div>
+      <h2>顏仲崑 <span class="a-personal-card__job">助理教授</span></h2>
+      <P style="font-size: 13px; margin: 10px; color: gray;">學歷：國立中山大學機械與機電工程學系博士</P>
+      <p><a href="https://www.isu.edu.tw/newsite/showpage.php?dept_mno=827&dept_id=0&page_id=50214"
+          style="color:  hsla(183, 85%, 40%, 0.639); font-size: 12px;"> 了解更多 </a></p>
+    </li>
+
+    <!-- 卓家榮助理教授 -->
+    <li class="card">
+      <div class="img"><img src="../upload/830/images/teacher/2nd/cho.jpg" alt="img" draggable="false"></div>
+      <h2>卓家榮 <span class="a-personal-card__job">助理教授</span></h2>
+      <p style="font-size: 13px; margin: 10px; color: gray;">學歷：國立台北科技大學有機高分子所博士</ㄣ>
+      <p><a href="http://www.che.isu.edu.tw/newsite/deptfa.php?dept_mno=830&dept_id=17&aid=1B014"
+          style="color:  hsla(183, 85%, 40%, 0.639); font-size: 12px;"> 了解更多 </a></p>
+    </li>
+
+    <!-- 周仕勳助理教授 -->
+    <li class="card">
+      <div class="img"><img src="../upload/828/teacher-img/8.jpg" alt="img" draggable="false"></div>
+      <h2>周仕勳 <span class="a-personal-card__job">助理教授</span></h2>
+      <p style="font-size: 13px; margin: 10px; color: gray;">學歷：國立成功大學博士</p>
+      <p><a href="https://www.isu.edu.tw/newsite/deptfa.php?dept_mno=828&dept_id=3&aid=1B114"
+          style="color: hsla(183, 85%, 40%, 0.639); font-size: 12px;"> 了解更多 </a></p>
+    </li>
+  </ul>
+  <i id="right" class="fa-solid fa-angle-right"></i>
+</div>
+
+
+<!-- 計畫按鈕 -->
+
+<div class="head01">新工程計畫推動與相關連結</div>
+<div class="text-align: right;">
+  <button class="u-btn-1 u-btn-buttom" onclick="createNewPage('https://www.neemec.org.tw/')">教育部新工程計畫</button>
+  <button class="u-btn-1 u-btn-buttom"
+    onclick="createNewPage('../upload/826/18/learning_map/new_map_Final.pdf')">工學院主題式課群地圖</button>
+  <button class="u-btn-1 u-btn-buttom" onclick="createNewPage('https://www.facebook.com/groups/826877509026062')">工學院新工程C類計畫FB</button>
+  <button class="u-btn-1 u-btn-buttom" onclick="createNewPage('http://140.133.40.3/ieetcivil.html')">土木系新工程A類計畫</button>
+  <button class="u-btn-1 u-btn-buttom" onclick="createNewPage('https://www.facebook.com/groups/243568528247227')">    電腦輔助課程     </button>
+  <button class="u-btn-1 u-btn-buttom" onclick="createNewPage('https://www.facebook.com/groups/1542102713218707')">    永續材料實驗實作   </button>
+</div>
+
+
+<div class="head01">苗圃計畫</div>
+
+
+
+
+<!-- <div class="u-clearfix u-sheet u-sheet-1" style="margin-top: 30px;text-align: center;">
+  <a href="https://www.neemec.org.tw/" class="u-btn-1 u-btn-buttom">教育部新工程計畫</a>
+  <a href="http://140.133.40.3/ieetcivil.html" class="u-btn-1 u-btn-buttom">課程架構翻轉</a>
+  <a href="http://140.133.40.3/ieetcivil.html" class="u-btn-1 u-btn-buttom">108學年度計畫進程</a>
+</div> -->
+
+<!--分欄網頁設定-->
+<div class="head01">特色教室與場域</div>
+
+<!-- <div class="u-clearfix u-sheet u-valign-bottom-sm u-sheet-1"> -->
+  <section class="u-align-center u-clearfix u-section-4" id="carousel_97cf">
+      <div class="u-clearfix u-sheet u-sheet-1">
+          <div class="u-clearfix u-disable-padding u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+              <div class="u-gutter-0 u-layout">
+                  <div class="u-layout-col">
+
+                    <div class="u-size-20 ">
+                      <div class="u-layout-row shadow-border featurePost-color-purple">
+                          <div class="u-container-style u-image u-layout-cell u-size-35 u-image-zero_carbon" data-image-width="630" data-image-height="471">
+                              <div class="u-container-layout u-container-layout-5"></div>
+                          </div>
+                          <div class="u-layout-cell u-shape-rectangle u-size-25 u-layout-cell-6">
+                              <div class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-container-layout-6">
+                                  <h3 class="u-align-left u-text u-text-7" style="color:mediumorchid;">零碳節能窩(Zero Carbon Wards)的實作場域位置 </h3>
+                                  <p class="u-align-left u-text" style="font-size:15px;">為了因應計畫主軸「永續工程設計與實踐」，本院新設置四座「零碳節能窩 (Zero Carbon Wards)」作為學生實作成果的展示與實踐場域，工學院四系各認養一座，配合「義守大學工程領域教學暨研究實習中心」既有資源，整合教學、研究與產學能量，在合作性競爭下對所屬「零碳節能窩 (Zero Carbon Wards)」逐年實踐減碳節能改善作為，以具備人文設計美學的解決方案來達到「永續工程設計與實踐」計畫的碳中和目標。 </p>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+<!-- </div>  -->
+
+<div id="sec-5c26" class="skrollable u-align-center u-clearfix u-section-5">
+  <!-- <h4
+    class="u-align-center-sm u-align-justify-lg u-align-justify-md u-align-justify-xl u-align-right-xs u-text u-text-2">
+  </h4> -->
+  <div class="u-clearfix u-sheet u-valign-bottom-sm u-valign-middle-xs u-sheet-1">
+    <div class="u-expanded-width u-layout-horizontal u-list u-list-1">
+      <div class="u-repeater u-repeater-1">
+
+        <!--第一欄-->
+        <div class="u-align-left u-container-style u-list-item u-repeater-item" style="cursor:pointer;" onclick="window.open(
+  'https://smartmechanicalwor.wixsite.com/maesmw');">
+          <div class="u-container-layout u-similar-container u-valign-bottom-xl u-container-layout-1">
+            <img class="u-expanded-width u-image u-image-default u-image-3" src="../upload/826/02/02-1.jpg" alt=""
+              data-image-width="4032" data-image-height="3024">
+            <div
+              class="u-container-style u-custom-color-8 u-expanded-width u-group u-hover-feature u-opacity u-opacity-50 u-group-1"
+              data-animation-name="customAnimationIn" data-animation-duration="1500">
+              <div class="u-container-layout u-valign-middle-sm">
+                <h4 class="u-text u-text-3">智慧設計與製造中心</h4>
+                <p class="u-text u-text-4">只有你想不到，沒有智慧機械工廠做不到，飛向義守，用XR觸動未來，義起圓夢。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--第二欄-->
+        <div class="u-align-left u-container-style u-list-item u-repeater-item" style="cursor:pointer;" onclick="window.open(
+  'https://www.isu.edu.tw/newsite/showpage.php?dept_mno=826&dept_id=11&page_id=45525');">
+          <div class="u-container-layout u-similar-container u-valign-bottom-xl u-container-layout-1"><img
+              class="u-expanded-width u-image u-image-default u-image-3" src="../upload/826/02/02-3.jpg" alt=""
+              data-image-width="691" data-image-height="921">
+            <div
+              class="u-container-style u-custom-color-8 u-expanded-width u-group u-hover-feature u-opacity u-opacity-50 u-group-1"
+              data-animation-name="customAnimationIn" data-animation-duration="1500">
+              <div class="u-container-layout u-valign-middle-sm">
+                <h4 class="u-text u-text-3">PBL實作教室</h4>
+                <p class="u-text u-text-4">設有小型萬能試驗機，循環水槽和電腦設備，提供學生實作的空間。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--第三欄-->
+        <div class="u-align-left u-container-style u-list-item u-repeater-item" style="cursor:pointer;" onclick="window.open(
+  'https://www.isu.edu.tw/newsite/showpage.php?dept_mno=826&dept_id=11&page_id=45526');">
+          <div class="u-container-layout u-similar-container u-valign-bottom-xl u-container-layout-1"><img
+              class="u-expanded-width u-image u-image-default u-image-3" src="../upload/826/02/02-4-1.jpg" alt=""
+              data-image-width="1800" data-image-height="1200">
+            <div
+              class="u-container-style u-custom-color-8 u-expanded-width u-group u-hover-feature u-opacity u-opacity-50 u-group-1"
+              data-animation-name="customAnimationIn" data-animation-duration="1500">
+              <div class="u-container-layout u-valign-middle-sm">
+                <h4 class="u-text u-text-3">工程力學互動教室</h4>
+                <p class="u-text u-text-4">學習者於課程中可機動分組及隨時變動桌椅配置，提升學習成效。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--第四欄-->
+        <div class="u-align-left u-container-style u-list-item u-repeater-item" style="cursor:pointer;" onclick="window.open(
+  'https://www.isu.edu.tw/newsite/showpage.php?dept_mno=829&dept_id=0&page_id=45293');">
+          <div class="u-container-layout u-similar-container u-valign-bottom-xl u-container-layout-1"><img
+              class="u-expanded-width u-image u-image-default u-image-3" src="../upload/826/02/02-2.jpg" alt=""
+              data-image-width="4608" data-image-height="3456">
+            <div
+              class="u-container-style u-custom-color-8 u-expanded-width u-group u-hover-feature u-opacity u-opacity-50 u-group-1"
+              data-animation-name="customAnimationIn" data-animation-duration="1500">
+              <div class="u-container-layout u-valign-middle-sm">
+                <h4 class="u-text u-text-3">機密分析實驗室</h4>
+                <p class="u-text u-text-4">整合校內貴重儀器設備服務及協助培育儀器相關之特殊專長人才，並提供各公私立大專院校、公立研究機構及產業界研發單位送樣分析服務。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--第五欄-->
+        <div class="u-align-left u-container-style u-list-item u-repeater-item" style="cursor:pointer;" onclick="window.open(
+  'https://www.isu.edu.tw/newsite/showpage.php?dept_mno=826&dept_id=11&page_id=45637');">
+          <div class="u-container-layout u-similar-container u-valign-bottom-xl u-container-layout-1"><img
+              class="u-expanded-width u-image u-image-default u-image-3" src="../upload/826/02/02-5.jpg" alt=""
+              data-image-width="4608" data-image-height="3456">
+            <div
+              class="u-container-style u-custom-color-8 u-expanded-width u-group u-hover-feature u-opacity u-opacity-50 u-group-1"
+              data-animation-name="customAnimationIn" data-animation-duration="1500">
+              <div class="u-container-layout u-valign-middle-sm">
+                <h4 class="u-text u-text-3">工程模擬互動教室</h4>
+                <p class="u-text u-text-4">建置智慧型黑板，強化互動空間，全面提升教學環境。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--按鈕-->
+      <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1"
+        role="button" href="#">
+        <svg viewBox="0 0 477.175 477.175">
+          <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+      c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z">
+          </path>
+        </svg>
+      </a>
+      <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2"
+        role="button" href="#">
+        <svg viewBox="0 0 477.175 477.175">
+          <path
+            d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+      c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="u-clearfix u-sheet u-valign-bottom-sm u-sheet-1">
+  <section class="u-align-center u-clearfix u-section-4" id="carousel_97cf">
+      <div class="u-clearfix u-sheet u-sheet-1">
+          <div class="u-align-center u-text u-text-1">▲四大主題式課群▼</div>
+          <div class="u-clearfix u-disable-padding u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+              <div class="u-gutter-0 u-layout">
+                  <div class="u-layout-col">
+
+                      <!-- 第一分欄 -->
+                      <div class="u-size-20">
+                          <div class="u-layout-row">
+                              <div class="u-container-style u-image u-layout-cell u-size-35 u-image-1" data-image-width="630" data-image-height="471">
+                                  <div class="u-container-layout u-container-layout-5"></div>
+                              </div>
+                              <div class="u-container-style u-layout-cell u-shape-rectangle u-size-25 u-layout-cell-6">
+                                  <div class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-container-layout-6">
+                                      <h3 class="u-align-left u-text u-text-5">綠色工程材料</h3>
+                                      <p class="u-align-left u-text u-text-6">引領學生探索綠色工程材料，學習傳統土木材料如何與現今永續與再生材料進行結合，除以試驗方式進行低碳混擬土評估，更跨域結合機械系常用應力分析軟體進行數值分析。</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- 第二分欄 -->
+                      <div class="u-size-20">
+                          <div class="u-layout-row">
+                              <div class="u-align-left u-container-style u-layout-cell u-shape-rectangle u-size-28 u-layout-cell-3">
+                                  <div class="u-container-layout u-container-layout-3">
+                                      <h3 class="u-align-left u-text u-text-3">新穎綠色節能材料科技與工程之應用</h3>
+                                      <p class="u-align-left u-text u-text-4">透過設計與思考，在化工及材料科技能源轉型之應用與安全性做設計，藉由實作進階了解高分子材料轉型生質高分子材料及綠色能源加工原理、節能技術與應用並達到永續的發展，以實踐節能議題，進而減少環境問題。</p>
+                                  </div>
+                              </div>
+                              <div class="u-align-left u-container-style u-image u-layout-cell u-size-32 u-image-2" data-image-width="1478" data-image-height="1108">
+                                  <div class="u-container-layout u-container-layout-4"></div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- 第三分欄 -->
+                      <div class="u-size-20">
+                          <div class="u-layout-row">
+                              <div class="u-container-style u-image u-layout-cell u-size-35 u-image-3" data-image-width="630" data-image-height="471">
+                                  <div class="u-container-layout u-container-layout-5"></div>
+                              </div>
+                              <div class="u-container-style u-layout-cell u-shape-rectangle u-size-25 u-layout-cell-6">
+                                  <div class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-container-layout-6">
+                                      <h3 class="u-align-left u-text u-text-5">智慧節能裝置設計與製造</h3>
+                                      <p class="u-align-left u-text u-text-6">讓學生透過虛實整合五階段教學模式，熟悉多功智慧機械基本原理與操作，進而導入產品元件的製作流程設計與評估，最後透過最佳製程的規劃，製作出符合低碳製造之產品。</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- 第四分欄 -->
+                      <div class="u-size-20">
+                          <div class="u-layout-row">
+                              <div class="u-align-left u-container-style u-layout-cell u-shape-rectangle u-size-28 u-layout-cell-3">
+                                  <div class="u-container-layout u-container-layout-3">
+                                      <h3 class="u-align-left u-text u-text-3">淨零建築實踐</h3>
+                                      <p class="u-align-left u-text u-text-4">結合環境工程學，深入淺出講解關於水污染、空氣污染與廢棄物等關鍵議題與對策，接著導入綠建築理念，最後以零碳節能窩進行碳足跡分析實作，計算產品基礎碳排量來探索最具性價比之綠建築策略。</p>
+                                  </div>
+                              </div>
+                              <div class="u-align-left u-container-style u-image u-layout-cell u-size-32 u-image-4" data-image-width="1478" data-image-height="1108">
+                                  <div class="u-container-layout u-container-layout-4"></div>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>
