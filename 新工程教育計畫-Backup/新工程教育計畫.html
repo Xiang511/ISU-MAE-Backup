@@ -10,8 +10,9 @@
     #color-change:hover h3,
     #color-change:hover .time {
         color: #fff !important;
-        transition: 250ms ease-in;
+        transition: 250ms ease;
     }
+
 
     .time {
         text-align: right;
@@ -24,13 +25,13 @@
     }
 
     #page-btn {
-        width: 100px;
+        width: auto;
         padding: 8px 10px;
         border-radius: 30px;
         color: #fff;
         background: rgba(70, 53, 86, 1);
-        ;
         text-decoration: none;
+        margin-right: .5em;
     }
 
     .bx.bx-right-arrow-alt:before {
@@ -43,15 +44,16 @@
     }
 
     #page-btn:hover {
-        transition: 250ms ease;
+        transition: 250ms ease-out;
         background: #BA55D3;
     }
 
     #page-btn:hover .bx.bx-right-arrow-alt {
-        transition: 250ms ease;
-        background: #000;
+        transition: 250ms ease-in;
+        background: rgba(70, 53, 86, 1);
         border-radius: 50%;
         transform: translateX(.6em);
+        scale:1.2
     }
 
 
@@ -60,7 +62,20 @@
         justify-content: flex-end;
         font-weight: bold;
     }
+
+
+    #btn p {
+        padding: 0 10px 0 10px;
+    }
+
     /* Xiang-特色領域 */
+
+
+    @media (max-width: 575px) {
+        .u-section-4 .u-text-7 {
+            margin-right: 0 !important;
+        }
+    }
 </style>
 
 
@@ -90,10 +105,18 @@
         /* 背景及圖片漸變時間 */
     }
 
-    .u-section-4 .u-image-zero_carbon:hover {
+
+
+
+    /* Change */
+
+    #color-change:hover .u-image-zero_carbon {
         background-image: url('../upload/826/18/homepage_image/container/container.png');
         /* 漸變後的圖片 */
     }
+
+
+
 
 
     .u-container-style-background:not([class*="u-align-"]) {
