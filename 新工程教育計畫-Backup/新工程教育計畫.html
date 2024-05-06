@@ -21,7 +21,8 @@
     }
 
     p.time {
-        margin: .5em 0 0 0 color:#808080;
+        margin: .5em 0 0 0 ;
+        color:#808080;
     }
 
     #page-btn {
@@ -53,7 +54,7 @@
         background: rgba(70, 53, 86, 1);
         border-radius: 50%;
         transform: translateX(.6em);
-        scale:1.1
+        scale: 1.1
     }
 
 
@@ -444,6 +445,145 @@
 
 
 <div class="head01">苗圃計畫</div>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+
+    .xiang-content {
+        margin-top: .5em;
+        box-shadow: 5px 5px 10px #888;
+    }
+
+    .xiang-content .xiang-txt {
+        margin-left: 2em;
+        padding: 10px;
+    }
+
+    .xiang-content .xiang-txt h3 {
+        margin-top: 1.3em;
+        color: rgb(0, 32, 96);
+    }
+
+    .xiang-content .xiang-txt p {
+        margin-top: 2.5em;
+        font-size: 1em;
+    }
+
+    .xiang-mv {
+        margin-top: 1em;
+        width: 100%;
+        aspect-ratio: 560/315;
+    }
+
+    .xiang-mv iframe {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+    }
+
+    @media screen and (min-width:768px) {
+        .xiang-container {
+            display: flex;
+            position: relative;
+            margin-top: 2em;
+        }
+
+        .xiang-container .xiang-item {
+            width: 40%;
+            height: 50vh;
+            background: #fff;
+        }
+
+        .xiang-container .xiang-item:nth-child(2) {
+            width: 60%;
+            background: rgb(211, 250, 246);
+        }
+
+        .xiang-content {
+            width: 100%;
+            margin: auto;
+            position: absolute;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: none;
+        }
+
+        .xiang-mv {
+            width: 600px;
+            aspect-ratio: 560/315;
+        }
+        
+        .flex-reverse{
+            flex-direction: row-reverse;
+        }
+    }
+</style>
+<div class="xiang-container">
+    <div class="xiang-item"></div>
+    <div class="xiang-item"></div>
+    <div class="xiang-content">
+        <div class="xiang-mv">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BjJkCcQfMJY?si=SFdydyEeN8qs8c02"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="xiang-txt">
+            <h3>拯救地球大作戰</br>ISU垃圾減量XAI輔助</h3>
+            <p>面對2050淨零碳排挑戰，減少廢棄物產生與廢棄物循環再利用，</br>可有效降低溫室氣體排放，工作坊以義守大學校園垃圾處理問題</br>作為實際議題，就貼近大學師生生活的校園環境為問題探討地點，</br>由設計思考探討校園環境垃圾減量與處理問題。
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="xiang-container flex-reverse">
+    <div class="xiang-item"></div>
+    <div class="xiang-item"></div>
+    <div class="xiang-content flex-reverse">
+        <div class="xiang-mv">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BjJkCcQfMJY?si=SFdydyEeN8qs8c02"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="xiang-txt">
+            <h3>拯救地球大作戰</br>新世代智慧設計與製造節能減碳</h3>
+            <p>透過機械系與工管系合作的「新世代智慧設計與製造節能減碳」</br>工作坊，探索義守大學 智慧設計與製造中心
+                的加工過程中碳排放</br>情況。透過深度思考產品製作過程的減碳規劃，培養學生跨領域</br>專業知識、設計思考、團隊合作和創新等能力，為義守大學帶來</br>跨域創新和節能永續的動力。
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="xiang-container">
+    <div class="xiang-item"></div>
+    <div class="xiang-item"></div>
+    <div class="xiang-content">
+        <div class="xiang-mv">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BjJkCcQfMJY?si=SFdydyEeN8qs8c02"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="xiang-txt">
+            <h3>拯救地球大作戰</br>藍海廢棄物材料VS永續綠化技術</h3>
+            <p>透過課程互動教學，培養學生對環保永續議題的認知，並促使其</br>具備問題解決能力、邏輯思維技巧，以及實務應用的技能。同時，</br>透過新穎的教學方法，促進教師與學生之間的密切互動，以使學</br>習更具活力且具體應用性。
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
 
 
 
