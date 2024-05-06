@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" xiang-content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    
 </head>
 <style>
     * {
@@ -14,40 +17,21 @@
         box-sizing: border-box;
     }
 
-    .xiang-container {
-        display: flex;
-        position: relative;
-    }
 
-    .xiang-container .xiang-item {
-        width: 40%;
-        height: 50vh;
-        background: #fff;
-    }
-    .xiang-container .xiang-item:nth-child(2){
-        width: 60%;
-        background: rgb(211, 250, 246);
-    }
-    .xiang-content{
-        /* width: 100%; */
-        margin: auto;
-        position: absolute;
-        display: flex;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-    .xiang-content .xiang-txt{
+    .xiang-content .xiang-txt {
         margin-left: 2em;
     }
-    .xiang-content .xiang-txt h3{
+
+    .xiang-content .xiang-txt h3 {
         margin-top: 1em;
         color: rgb(0, 32, 96);
     }
-    .xiang-content .xiang-txt p{
+
+    .xiang-content .xiang-txt p {
         margin-top: 2.5em;
         font-size: 1em;
     }
+
     .xiang-mv {
         width: 600px;
         aspect-ratio: 560/315;
@@ -58,23 +42,131 @@
         height: 100%;
         vertical-align: top;
     }
+
+    @media screen and (min-width:768px) {
+        .xiang-container {
+            display: flex;
+            position: relative;
+        }
+
+        .xiang-container .xiang-item {
+            width: 40%;
+            height: 50vh;
+            background: #fff;
+        }
+
+        .xiang-container .xiang-item:nth-child(2) {
+            width: 60%;
+            background: rgb(211, 250, 246);
+        }
+
+        .xiang-content {
+            width: 80%;
+            margin: auto;
+            position: absolute;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .owl-carousel .owl-nav button.owl-prev,
+        .owl-carousel .owl-nav button.owl-next{
+            position: absolute;
+            top: 0;
+            bottom: 40px;
+            width: 40px;
+            margin: 0;
+            border-radius: 0;
+        }
+        .owl-carousel .owl-nav button.owl-prev{
+            left: 0;
+        }
+        .owl-carousel .owl-nav button.owl-next{
+            right: 0;
+        }
+        .owl-dots{
+            display: none;
+        }
+        .owl-nav span{
+            font-size: 2em;
+        }
+        .owl-theme .owl-nav [class*=owl-]:hover {
+            background: none !important;
+        }
 </style>
 
 <body>
-    <div class="xiang-container">
-        <div class="xiang-item"></div>
-        <div class="xiang-item"></div>
-        <div class="xiang-content">
-            <div class="xiang-mv">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/BjJkCcQfMJY?si=SFdydyEeN8qs8c02" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="xiang-txt">
-                <h3>拯救地球大作戰</br>ISU垃圾減量XAI輔助</h3>
-                <p>面對2050淨零碳排挑戰，減少廢棄物產生與廢棄物循環再利用，</br>可有效降低溫室氣體排放，工作坊以義守大學校園垃圾處理問題</br>作為實際議題，就貼近大學師生生活的校園環境為問題探討地點，</br>由設計思考探討校園環境垃圾減量與處理問題。
-                </p>
+   
+    <div class="owl-carousel owl-theme banner-carousel">
+        <div class="slider-pic" >
+            <div class="xiang-container">
+                <div class="xiang-item"></div>
+                <div class="xiang-item"></div>
+                <div class="xiang-content">
+                    <div class="xiang-mv">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BjJkCcQfMJY?si=SFdydyEeN8qs8c02"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="xiang-txt">
+                        <h3>拯救地球大作戰</br>ISU垃圾減量XAI輔助</h3>
+                        <p>面對2050淨零碳排挑戰，減少廢棄物產生與廢棄物循環再利用，</br>可有效降低溫室氣體排放，工作坊以義守大學校園垃圾處理問題</br>作為實際議題，就貼近大學師生生活的校園環境為問題探討地點，</br>由設計思考探討校園環境垃圾減量與處理問題。
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="slider-pic" >
+            <div class="xiang-container">
+                <div class="xiang-item"></div>
+                <div class="xiang-item"></div>
+                <div class="xiang-content">
+                    <div class="xiang-mv">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BjJkCcQfMJY?si=SFdydyEeN8qs8c02"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="xiang-txt">
+                        <h3>拯救地球大作戰</br>ISU垃圾減量XAI輔助</h3>
+                        <p>面對2050淨零碳排挑戰，減少廢棄物產生與廢棄物循環再利用，</br>可有效降低溫室氣體排放，工作坊以義守大學校園垃圾處理問題</br>作為實際議題，就貼近大學師生生活的校園環境為問題探討地點，</br>由設計思考探討校園環境垃圾減量與處理問題。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
 </body>
+
+<script src="jquery_3.7.1_jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script>$(document).ready(function () {
+        $(".banner-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            center: true, // 欄位需偶數
+            startPosition: 'URLHash',
+            nav: true,
+
+            responsive: {
+                0: {
+                    items: 1,
+                    // nav:true //左右箭頭
+                },
+                768: {
+                    items: 1,
+                    // nav:true
+                },
+                // 1024:{
+                //     items:3,
+                //     nav:true,
+                //     loop:true
+                // }
+            }
+        });
+    });</script>
 
 </html>
