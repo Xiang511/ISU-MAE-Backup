@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.u-body {
+    --theme-sheet-width-xl: 100% !important;
+    margin: auto;
+}
+
+.pic img,
+.banner-img img {
+    width: 100%;
+}
+
+/* ==================================================== */
+
+.banner {
+    position: relative;
+    background: #fcf6e7;
+}
+
+.banner-txt {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 1;
+}
+
+.banner-txt h1 {
+    margin-bottom: .6em;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.banner-img {
+    z-index: 0;
+    position: relative;
+    right: -10%;
+    width: calc(100% - 10%);
+}
+
+/* ===================================================== */
+.container {
+    background: #f9eed8;
+}
+
+.two-col {
+    padding: 1em;
+}
+
+.two-col:nth-child(2) h3 {
+    color: #970719;
+}
+
+.two-col h3 {
+    margin: 1em 0 0.5em 0;
+    color: #c55a11;
+    position: relative;
+}
+
+.two-col p {
+    text-align: justify;
+}
+
+.two-col h3::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 95%;
+    background: #c55a11;
+    top: -.4em;
+    left: 0;
+}
+
+.two-col h3::before {
+    position: absolute;
+    content: "";
+    height: .8em;
+    width: .8em;
+    background: #c55a11;
+    top: -.65em;
+    right: 4%;
+    border-radius: 50%;
+}
+
+@media screen and (min-width:767px) {
+    .two-col {
+        display: flex;
+        gap: 10px;
+    }
+
+    .two-col>div {
+        width: 50%;
+    }
+
+    .two-col:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+
+    /* ========================= */
+    .two-col h3::after {
+        left: -.5em;
+    }
+
+    .two-col:nth-child(2n) h3::after {
+        top: -0.5em;
+        left: .5em;
+        width: 100%;
+    }
+
+    .two-col:nth-child(2n) h3::before {
+        top: -0.78em;
+        left: 0;
+    }
+
+    .two-col p {
+        margin-top: .5em;
+    }
+
+    /* =========================== */
+}
+
+@media screen and (min-width:1200px) {
+    
+    .two-col h3::after {
+        width: 30%;
+        top: -.4em;
+        left: 0;
+
+    }
+
+    .two-col h3::before {
+        top: -.65em;
+        right: 70%;
+        border-radius: 50%;
+    }
+
+    /* ========================= */
+    .two-col h3::after {
+        left: -.5em;
+    }
+
+    .two-col:nth-child(2n) h3::after {
+        top: -0.5em;
+        left: .5em;
+        width: 100%;
+    }
+
+    .two-col:nth-child(2n) h3::before {
+        top: -0.78em;
+        left: 0;
+    }
+
+    .two-col p {
+        margin-top: .5em;
+    }
+
+    /* =========================== */
+}
