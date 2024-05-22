@@ -163,9 +163,22 @@
 .Carbon-Wards p {
     margin-top: 0.4em;
 }
+.slider{
+    background: #F1E8D0;
+    padding: 15px;
+}
+.slider h2{
+    color: #970719;
+    border-bottom: 2px#970719 solid;
+    display: inline-block;
+}
 
-
-
+.xiang-carousel{
+    margin-top: 2em;
+}
+.owl-dots{
+    display: none;
+}
 
 @media screen and (min-width:767px) {
     .two-col {
