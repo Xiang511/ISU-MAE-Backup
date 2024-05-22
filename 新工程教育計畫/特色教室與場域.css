@@ -12,7 +12,7 @@
 
 .pic img,
 .banner-img img,
-.card-img  img{
+.card-img img {
     width: 100%;
 }
 
@@ -103,24 +103,29 @@
     border-radius: 20px;
 }
 
-.card-group{
+.card-group {
     background: #F1E8D0;
-    padding: 3em 0 0 0;
+    padding: 3em 0 9em 0;
 }
-.card-group img{
+
+.card-group img {
     aspect-ratio: 4/3;
 }
-.card{
+
+.card {
     margin-top: 0.5m;
-   padding: 10px;
+    padding: 10px;
 }
-.card-txt{
+
+.card-txt {
     position: relative;
 }
-.card-txt h3{
+
+.card-txt h3 {
     color: #C65A23;
 }
-.card-txt h3::after{
+
+.card-txt h3::after {
     content: "";
     width: 50%;
     position: absolute;
@@ -129,16 +134,35 @@
     height: 1px;
     background: #C65A23;
 }
-.card-txt p{
+
+.card-txt p {
     margin-top: 0.8em;
     font-weight: 700;
 }
 
+.Zero-Carbon-Wards {
+    background: #F1E8D0;
+    padding: 4em 15px 15px 15px;
+    border-top: 4px solid #000;
+}
 
+.Zero-Carbon-Wards .pic img {
+    width: 100%;
+}
 
+.Carbon-Wards {
+    padding: 10px;
+    background: #F8F4E9;
+}
 
+.Carbon-Wards h3 {
+    color: #970719;
+    font-size: 1.4em;
+}
 
-
+.Carbon-Wards p {
+    margin-top: 0.4em;
+}
 
 
 
@@ -152,11 +176,13 @@
     .two-col>div {
         width: 50%;
     }
+
     .two-col:nth-child(1),
     .two-col:nth-child(2) {
         width: 90%;
         margin: auto;
     }
+
     .two-col:nth-child(2n) {
         flex-direction: row-reverse;
     }
@@ -188,16 +214,38 @@
 
     /* =========================== */
 
-    .card-group{
+    .card-group {
         display: flex;
         flex-wrap: wrap;
     }
-    .card{
+
+    .card {
         width: 50%;
     }
 
+    /* ================================ */
+    .Carbon-Wards {
+        display: flex;
+        gap: 10px;
+        position: relative;
+        background: rgba(255, 255, 255, 0.29)
+    }
 
+    .Carbon-Wards .pic {
+        width: 50%;
+    }
 
+    .Carbon-Wards .txt {
+        display: flex;
+        flex-direction: column;
+        background: #F8F4E9;
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        padding: 20px 50px 20px 25px;
+        width: 50%;
+    }
 
 
 
@@ -241,7 +289,7 @@
 
     .two-col:nth-child(2n) h3::before {
         top: 17%;
-        left: 61%;  
+        left: 61%;
     }
 
     .two-col:nth-last-child(-n+2) h3::after {
@@ -260,7 +308,7 @@
 
     /* =========================== */
 
-    .Carbon{
+    .Carbon {
         width: 30%;
     }
 
@@ -298,53 +346,119 @@
     .completed .txt {
         margin-top: -3em;
     }
+
     .completed .txt p {
         margin-top: 1.5em;
     }
+
     .completed img {
         border-radius: 20px;
         position: relative;
         top: -22%;
     }
 
-    .card-group{
+    .card-group {
         justify-content: space-around;
     }
-    .card-group .card:nth-child(2n){
+
+    .card-group .card:nth-child(2n) {
         display: flex;
         flex-direction: column-reverse;
     }
-    .card{
+
+    .card {
         width: 20%;
     }
-    
-    .card-txt{
+
+    .card-txt {
         position: relative;
         padding-bottom: 15em;
     }
-    .card-txt h3{
+
+    .card-txt h3 {
         color: #C65A23;
-        writing-mode: vertical-lr ;
-        border-left: 2px solid ;
+        writing-mode: vertical-lr;
+        border-left: 2px solid;
         padding-left: 5px;
         position: absolute;
         top: 4%;
 
     }
-    .card-group .card:nth-child(2n) .card-txt h3{
+
+    .card-group .card:nth-child(2n) .card-txt h3 {
         top: 7%;
 
     }
-    .card-txt h3::after{
+
+    .card-txt h3::after {
         display: none;
     }
-    .card-txt p{
-        writing-mode: vertical-lr ;
+
+    .card-txt p {
+        writing-mode: vertical-lr;
         height: 9em;
         position: absolute;
         left: 20%;
         letter-spacing: .5em;
         font-size: 1.2em;
         text-align: left;
+    }
+
+    .Carbon-Wards {
+        position: relative;
+        padding: 9em 0 0 0;
+        background: #F1E8D0;
+    }
+
+    .Carbon-Wards::after {
+        content: '';
+        width: 50%;
+        height: 50%;
+        background: #fcf6e7;
+        position: absolute;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .Carbon-Wards .pic,
+    .Carbon-Wards .txt {
+        z-index: 3;
+    }
+
+    .Carbon-Wards .pic {
+        width: 60%;
+    }
+
+    .Carbon-Wards .txt {
+        top: 60%;
+        left: 80%;
+        height: 80%;
+        width: 40%;
+        padding: 1em;
+    }
+
+    .Carbon-Wards .txt h3 {
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+
+    .Carbon-Wards .txt p {
+        font-size: 1.4em;
+        margin-top: 2em;
+        padding: 0 1em 0 1em;
+        text-align: justify;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .Carbon-Wards .txt {
+        height: 60%;
+        padding-top: 2.5em;
+    }
+
+    .Carbon-Wards .txt p {
+        line-height: 2em;
     }
 }
