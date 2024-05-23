@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+.u-align-left.u-container-style.u-layout-cell.u-size-15.u-size-30-md.u-layout-cell-1 {
+    padding-left: 1.2em;
+}
+
+footer {
+    margin-top: 0 !important;
+}
+
 .u-body {
     --theme-sheet-width-xl: 100% !important;
     --theme-sheet-width-xl: 100% !important;
