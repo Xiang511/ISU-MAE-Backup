@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="特色教室與場域.css">
     <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
 </head>
 
 <body>
@@ -40,7 +43,7 @@
                 <img src="img/teacher.png" class="teacher">
             </div>
         </div>
-      
+
 
         <div class="two-col birth reveal">
             <div class="pic">
@@ -143,6 +146,59 @@
         </div>
 
     </section>
+
+    <section class="slider">
+        <h2>幕後特輯</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/p14_1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/p14_2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/p14_3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/p14_4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/p14_5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/p14_6.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/p14_7.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/p14_8.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/p14_9.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/p14_10.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/p14_11.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/p14_12.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/p14_13.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/p14_14.jpg" alt=""></div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-button-prev"></div> -->
+        </div>
+    </section>
+
+
+
+
+
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+        });
+    </script>
+
+
     <script>
         window.addEventListener('scroll', reveal);
 
