@@ -1,10 +1,25 @@
 <link rel="stylesheet" href="../newsite/css/new.css" media="screen">
 <!-- <link rel="stylesheet" href="../upload/826/18/code/all_min.css"> -->
 <script src="../upload/826/18/code/card_script.js" defer></script>
+<script src="../upload/826/18/js/jquery_360_min.js" defer></script>
+<script src="../upload/826/18/js/owl_carousel_min.js" defer></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
 
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+
+<!-- Link jQuery -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- Link Owl Carousel JS -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+
+
 <style>
     /* Xiang-特色領域 */
     #color-change:hover h3,
@@ -21,8 +36,7 @@
     }
 
     p.time {
-        margin: .5em 0 0 0 ;
-        color:#808080;
+        margin: .5em 0 0 0 color#808080;
     }
 
     #page-btn {
@@ -276,21 +290,9 @@
     .head01 {
         margin-top: 60px;
     }
-
-    /*
-  .head01 {
-    font-family: NotoSansTC-Regular;
-    font-size: 1.5rem;
-    font-style: normal;
-    margin: 30px auto 0 0px;
-    border-color: #2cccc4;
-    border-left: 4px solid #2cccc4;
-    padding-left: 10px;
-    height: 40px;
-    line-height: 40px;
-    font-weight: 600;
-} */
 </style>
+
+
 
 <script>
     function createNewPage(web) {
@@ -299,27 +301,19 @@
 </script>
 
 
+
 <div class="head01">新工程計畫簡介</div>
 
 <p style="text-align:justify;"><span
         style="font-size: large;">　　義守大學工學院為貫徹「培養具科技運用、跨域創新、永續理念與倫理素養之工程人才」之教育目標，參與了112-116年教育部資科司推動的
-
         <span style="color:#e66689;font-weight:bold;">「新工程教育方法實驗與建構計畫-C類計畫」</span>
-
         ，成為五所學校中，唯一的南臺灣代表。為落實新工程教育理念於整體學院，以「永續工程設計與實踐」為主軸，推動
-
         <span style="color:#e66689;font-weight:bold;">四個主題式課群</span>
-
         <span style="color:#4ac1ad;font-weight:bold;">(綠色工程材料、新穎綠色節能材料科技與工程之應用、智慧節能裝置設計與製造、永續工程實作)</span>
-
         ，並同時在校園內新設置
-
         <span style="color:#e66689;font-weight:bold;">四座「零碳節能窩(Zero Carbon Wards)」</span>
-
         作為主要成果實踐場域，從實踐教學創新、建立教師社群做起，翻轉傳統工程教育模式，從而培養出具人文設計美學素養、獨創思維與技能、
-
         兼顧工程專業基礎知識及實踐能力，勇於嘗試、開創新議題，並能運用設計思考及跨領域團隊合作解決實際問題的優秀工程人才。</p></span></p>
-
 
 <!-- 計畫執行團隊 -->
 <div class="head01">計畫執行團隊</div>
@@ -444,7 +438,17 @@
 </div>
 
 
+
+
+
+
+
+
 <div class="head01">苗圃計畫</div>
+
+
+
+
 
 
 <style>
@@ -463,6 +467,7 @@
     .xiang-content .xiang-txt {
         margin-left: 2em;
         padding: 10px;
+        width:85%;
     }
 
     .xiang-content .xiang-txt h3 {
@@ -520,72 +525,204 @@
             width: 600px;
             aspect-ratio: 560/315;
         }
-        
-        .flex-reverse{
+
+        .flex-reverse {
             flex-direction: row-reverse;
         }
     }
+@media screen and (min-width:1024px) {
+    .xiang-content .xiang-txt {
+        width:48% !important;
+    }
+}
 </style>
-<div class="xiang-container">
-    <div class="xiang-item"></div>
-    <div class="xiang-item"></div>
-    <div class="xiang-content">
-        <div class="xiang-mv">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BjJkCcQfMJY?si=SFdydyEeN8qs8c02"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+
+
+    .xiang-content .xiang-txt {
+        margin-left: 2em;
+    }
+
+    .xiang-content .xiang-txt h3 {
+        margin-top: 1em;
+        color: rgb(0, 32, 96);
+    }
+
+    .xiang-content .xiang-txt p {
+        margin-top: 2.5em;
+        font-size: 1em;
+    }
+
+    .xiang-mv {
+        width: 600px;
+        aspect-ratio: 560/315;
+    }
+
+    .xiang-mv iframe {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+    }
+
+    @media screen and (min-width:768px) {
+        .xiang-container {
+            display: flex;
+            position: relative;
+        }
+
+        .xiang-container .xiang-item {
+            width: 40%;
+            height: 50vh;
+            background: #fff;
+        }
+
+        .xiang-container .xiang-item:nth-child(2) {
+            width: 60%;
+            background: rgb(211, 250, 246);
+        }
+
+        .xiang-content {
+            width: 80%;
+            margin: auto;
+            position: absolute;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+        position: absolute;
+        top: 0;
+        bottom: 40px;
+        width: 40px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        left: 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        right: 0;
+    }
+.owl-carousel .owl-nav:hover span{
+color:#000
+}
+
+    .owl-dots {
+        display: none;
+    }
+
+    .owl-nav span {
+        font-size: 2em;
+    }
+
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background: none !important;
+    }
+    .xiang-content .xiang-txt {
+        width:85%;
+    }
+</style>
+<div class="owl-carousel owl-theme banner-carousel">
+    <div class="slider-pic">
+        <div class="xiang-container">
+            <div class="xiang-item"></div>
+            <div class="xiang-item"></div>
+            <div class="xiang-content">
+                <div class="xiang-mv">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BjJkCcQfMJY?si=SFdydyEeN8qs8c02"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="xiang-txt">
+                    <h3>拯救地球大作戰</h3>
+                    <h3> ISU垃圾減量XAI輔助</h3>
+                    <p>面對2050淨零碳排挑戰，減少廢棄物產生與廢棄物循環再利用，可有效降低溫室氣體排放，工作坊以義守大學校園垃圾處理問題作為實際議題，就貼近大學師生生活的校園環境為問題探討地點，由設計思考探討校園環境垃圾減量與處理問題。
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="xiang-txt">
-            <h3>拯救地球大作戰</br>ISU垃圾減量XAI輔助</h3>
-            <p>面對2050淨零碳排挑戰，減少廢棄物產生與廢棄物循環再利用，</br>可有效降低溫室氣體排放，工作坊以義守大學校園垃圾處理問題</br>作為實際議題，就貼近大學師生生活的校園環境為問題探討地點，</br>由設計思考探討校園環境垃圾減量與處理問題。
-            </p>
+    </div>
+    <div class="slider-pic">
+        <div class="xiang-container">
+            <div class="xiang-item"></div>
+            <div class="xiang-item"></div>
+            <div class="xiang-content">
+                <div class="xiang-mv">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BjJkCcQfMJY?si=SFdydyEeN8qs8c02"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="xiang-txt">
+                    <h3>拯救地球大作戰</h3>
+                    <h3>新世代智慧設計與製造節能減碳</h3>
+                    <p>透過機械系與工管系合作的「新世代智慧設計與製造節能減碳」工作坊，探索義守大學 智慧設計與製造中心
+                        的加工過程中碳排放情況。透過深度思考產品製作過程的減碳規劃，培養學生跨領域專業知識、設計思考、團隊合作和創新等能力，為義守大學帶來跨域創新和節能永續的動力。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-pic">
+        <div class="xiang-container">
+            <div class="xiang-item"></div>
+            <div class="xiang-item"></div>
+            <div class="xiang-content">
+                <div class="xiang-mv">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BjJkCcQfMJY?si=SFdydyEeN8qs8c02"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="xiang-txt">
+                    <h3>拯救地球大作戰</h3>
+                    <h3>藍海廢棄物材料VS永續綠化技術</h3>
+                    <p>透過課程互動教學，培養學生對環保永續議題的認知，並促使其具備問題解決能力、邏輯思維技巧，以及實務應用的技能。同時，透過新穎的教學方法，促進教師與學生之間的密切互動，以使學習更具活力且具體應用性。
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="xiang-container flex-reverse">
-    <div class="xiang-item"></div>
-    <div class="xiang-item"></div>
-    <div class="xiang-content flex-reverse">
-        <div class="xiang-mv">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BjJkCcQfMJY?si=SFdydyEeN8qs8c02"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="xiang-txt">
-            <h3>拯救地球大作戰</br>新世代智慧設計與製造節能減碳</h3>
-            <p>透過機械系與工管系合作的「新世代智慧設計與製造節能減碳」</br>工作坊，探索義守大學 智慧設計與製造中心
-                的加工過程中碳排放</br>情況。透過深度思考產品製作過程的減碳規劃，培養學生跨領域</br>專業知識、設計思考、團隊合作和創新等能力，為義守大學帶來</br>跨域創新和節能永續的動力。
-            </p>
-        </div>
-    </div>
-</div>
+<script> $(".banner-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        center: true, // 欄位需偶數
+        startPosition: 'URLHash',
+        nav: true,
 
-<div class="xiang-container">
-    <div class="xiang-item"></div>
-    <div class="xiang-item"></div>
-    <div class="xiang-content">
-        <div class="xiang-mv">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BjJkCcQfMJY?si=SFdydyEeN8qs8c02"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="xiang-txt">
-            <h3>拯救地球大作戰</br>藍海廢棄物材料VS永續綠化技術</h3>
-            <p>透過課程互動教學，培養學生對環保永續議題的認知，並促使其</br>具備問題解決能力、邏輯思維技巧，以及實務應用的技能。同時，</br>透過新穎的教學方法，促進教師與學生之間的密切互動，以使學</br>習更具活力且具體應用性。
-            </p>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
+        responsive: {
+            0: {
+                items: 1,
+                // nav:true //左右箭頭
+            },
+            768: {
+                items: 1,
+                // nav:true
+            },
+            // 1024:{
+            //     items:3,
+            //     nav:true,
+            //     loop:true
+            // }
+        }
+    });</script>
 
 
 <!-- <div class="u-clearfix u-sheet u-sheet-1" style="margin-top: 30px;text-align: center;">
@@ -595,9 +732,6 @@
 </div> -->
 
 <!--分欄網頁設定-->
-
-
-
 
 
 
@@ -629,7 +763,8 @@
                                         (Zero Carbon Wards)」逐年實踐減碳節能改善作為，以具備人文設計美學的解決方案來達到「永續工程設計與實踐」計畫的碳中和目標。 </p>
 
                                     <div class="new-page">
-                                        <a href="#" id="page-btn">
+                                        <a href="https://www.isu.edu.tw/newsite/showpage.php?dept_mno=826&dept_id=19&page_id=52419"
+                                            id="page-btn">
                                             <span>More</span><i class='bx bx-right-arrow-alt'></i>
                                         </a>
                                     </div>
