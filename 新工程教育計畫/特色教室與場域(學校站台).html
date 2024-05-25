@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <style>
-        
+        /* footer padding設定 */
         .u-align-left.u-container-style.u-layout-cell.u-size-15.u-size-30-md.u-layout-cell-1 {
             padding-left: 1.2em;
         }
 
+        /* footer margin設定 */
         footer {
             margin-top: 0 !important;
         }
 
+        /* css reset */
         * {
             margin: 0;
             padding: 0;
@@ -25,6 +27,7 @@
             box-sizing: border-box;
         }
 
+        /* 複寫 學校CSS */
         .u-body {
             --theme-sheet-width-xl: 100% !important;
             --theme-sheet-width-xl: 100% !important;
@@ -36,13 +39,14 @@
             margin: auto;
         }
 
+        /*  防止圖片過大 */
         .pic img,
         .banner-img img,
         .card-img img {
             width: 100%;
         }
 
-        /* ==================================================== */
+        /* ================== banner區塊 ================================ */
 
         .banner {
             position: relative;
@@ -73,6 +77,7 @@
             animation-iteration-count: infinite;
         }
 
+        /* banner animation */
         @keyframes zoom-in {
             0% {
                 transform: scale(0.95);
@@ -87,11 +92,14 @@
             }
         }
 
-        /* ===================================================== */
+        /* ================== banner區塊 ================================ */
+
+        /* =================== container區塊 ======================= */
         .container {
             background: #f9eed8;
         }
 
+        /* 兩欄版面 */
         .two-col {
             padding: 1em;
         }
@@ -145,6 +153,7 @@
             border-radius: 20px;
         }
 
+        /* card 版面 */
         .card-group {
             background: #F1E8D0;
             padding: 3em 0 9em 0;
@@ -182,6 +191,9 @@
             font-weight: 700;
         }
 
+        /* =================== container區塊 ======================= */
+
+        /* =================== 零碳節能窩 (Zero Carbon Wards) 區塊 ===================  */
         .Zero-Carbon-Wards {
             background: #F1E8D0;
             padding: 4em 15px 15px 15px;
@@ -206,6 +218,9 @@
             margin-top: 0.4em;
         }
 
+        /* =================== 零碳節能窩 (Zero Carbon Wards) 區塊 ===================  */
+
+        /* =================== 幕後特輯區塊 ===================  */
         .slider {
             background: #F1E8D0;
             padding: 15px;
@@ -231,6 +246,7 @@
             margin: auto;
         }
 
+        /* 圖片淡入特效 */
         .reveal {
             position: relative;
             transform: translateY(150px);
@@ -272,10 +288,13 @@
         .swiper-slide img {
             display: block;
             width: 90%;
-            /* height: 100%; */
-            /* object-fit: cover; */
         }
 
+        /* =================== 幕後特輯區塊 ===================  */
+
+
+        /* 媒體查詢 */
+        
         @media screen and (min-width:767px) {
             .two-col {
                 display: flex;
