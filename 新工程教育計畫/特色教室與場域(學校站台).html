@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特色教室與場域</title>
+    <link rel="stylesheet" href="特色教室與場域.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <style>
+        
+        .u-align-left.u-container-style.u-layout-cell.u-size-15.u-size-30-md.u-layout-cell-1 {
+            padding-left: 1.2em;
+        }
+
+        footer {
+            margin-top: 0 !important;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+
+        .u-body {
+            --theme-sheet-width-xl: 100% !important;
+            --theme-sheet-width-xl: 100% !important;
+            --theme-sheet-width-lg: 100% !important;
+            --theme-sheet-width-md: 100% !important;
+            --theme-sheet-width-sm: 100% !important;
+            --theme-sheet-width-ms: 100% !important;
+            --theme-sheet-width-xs: 100% !important;
+            margin: auto;
+        }
+
+        .pic img,
+        .banner-img img,
+        .card-img img {
+            width: 100%;
+        }
+
+        /* ==================================================== */
+
+        .banner {
+            position: relative;
+            background: #fcf6e7;
+        }
+
+        .banner-txt {
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 5%;
+            transform: translate(-5%, -50%);
+            z-index: 1;
+        }
+
+        .banner-txt h1 {
+            margin-bottom: .6em;
+            font-size: 3em;
+            font-weight: 900;
+        }
+
+        .banner-img {
+            z-index: 0;
+            position: relative;
+            right: -10%;
+            width: calc(100% - 10%);
+            animation: zoom-in 6s ease-in-out 0s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes zoom-in {
+            0% {
+                transform: scale(0.95);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0.95);
+            }
+        }
+
+        /* ===================================================== */
+        .container {
+            background: #f9eed8;
+        }
+
+        .two-col {
+            padding: 1em;
+        }
+
+        .two-col:nth-child(2) h3 {
+            color: #970719;
+        }
+
+        .two-col h3 {
+            margin: 1em 0 0.5em 0;
+            color: #c55a11;
+            position: relative;
+            font-size: 1.6em;
+        }
+
+        .two-col p {
+            text-align: justify;
+            font-size: 1.3em;
+        }
+
+        .two-col h3::after {
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 95%;
+            background: #c55a11;
+            top: -.4em;
+            left: 0;
+        }
+
+        .two-col h3::before {
+            position: absolute;
+            content: "";
+            height: .65em;
+            width: .65em;
+            background: #c55a11;
+            top: -.65em;
+            right: 4%;
+            border-radius: 50%;
+        }
+
+        .placement img {
+            border-radius: 20px;
+        }
+
+        .concrete img {
+            border-radius: 20px;
+        }
+
+        .completed img {
+            border-radius: 20px;
+        }
+
+        .card-group {
+            background: #F1E8D0;
+            padding: 3em 0 9em 0;
+        }
+
+        .card-group img {
+            aspect-ratio: 4/3;
+        }
+
+        .card {
+            margin-top: 0.5m;
+            padding: 10px;
+        }
+
+        .card-txt {
+            position: relative;
+        }
+
+        .card-txt h3 {
+            color: #C65A23;
+        }
+
+        .card-txt h3::after {
+            content: "";
+            width: 50%;
+            position: absolute;
+            top: 1.8em;
+            left: 0;
+            height: 1px;
+            background: #C65A23;
+        }
+
+        .card-txt p {
+            margin-top: 1.8em;
+            font-weight: 700;
+        }
+
+        .Zero-Carbon-Wards {
+            background: #F1E8D0;
+            padding: 4em 15px 15px 15px;
+            border-top: 4px solid #000;
+        }
+
+        .Zero-Carbon-Wards .pic img {
+            width: 100%;
+        }
+
+        .Carbon-Wards {
+            padding: 10px;
+            background: #F8F4E9;
+        }
+
+        .Carbon-Wards h3 {
+            color: #970719;
+            font-size: 1.4em;
+        }
+
+        .Carbon-Wards p {
+            margin-top: 0.4em;
+        }
+
+        .slider {
+            background: #F1E8D0;
+            padding: 15px;
+        }
+
+        .slider h2 {
+            color: #970719;
+            border-bottom: 2px#970719 solid;
+            display: inline-block;
+        }
+
+        .xiang-carousel {
+            margin-top: 2em;
+        }
+
+        .owl-dots {
+            display: none;
+        }
+
+        .teacher {
+            width: 50% !important;
+            display: block;
+            margin: auto;
+        }
+
+        .reveal {
+            position: relative;
+            transform: translateY(150px);
+            opacity: 0;
+            transition: all 2s ease;
+        }
+
+        .reveal.active {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+
+        .slider {
+            background: #F1E8D0;
+            padding: 15px;
+        }
+
+        .slider h2 {
+            color: #970719;
+            border-bottom: 2px#970719 solid;
+            display: inline-block;
+        }
+
+        .swiper-container {
+            width: 90%;
+            /* height: 100%; */
+            margin-top: 2em;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 90%;
+            /* height: 100%; */
+            /* object-fit: cover; */
+        }
+
+        @media screen and (min-width:767px) {
+            .two-col {
+                display: flex;
+                gap: 40px;
+            }
+
+            .two-col>div {
+                width: 50%;
+            }
+
+            .two-col:nth-child(1),
+            .two-col:nth-child(2) {
+                width: 90%;
+                margin: auto;
+            }
+
+            .two-col:nth-child(2n) {
+                flex-direction: row-reverse;
+            }
+
+            /* ========================= */
+            .two-col h3::after {
+                left: -.5em;
+            }
+
+            .two-col:nth-child(2n) h3::after {
+                top: -0.5em;
+                left: .5em;
+                width: 100%;
+            }
+
+            .two-col:nth-child(2n) h3::before {
+                top: -0.78em;
+                left: 0;
+            }
+
+            .two-col h3 {
+                font-size: 1.5em;
+            }
+
+            .two-col p {
+                margin-top: .5em;
+                font-size: 1.2em;
+            }
+
+            .Carbon {
+                flex-wrap: wrap;
+            }
+
+            .Carbon>div {
+                width: 47%;
+            }
+
+            .Carbon>div:nth-child(3) {
+                width: 100%;
+            }
+
+            .teacher {
+                width: 36% !important;
+            }
+
+            /* =========================== */
+
+            .card-group {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .card {
+                width: 50%;
+            }
+
+            /* ================================ */
+            .Carbon-Wards {
+                display: flex;
+                gap: 10px;
+                position: relative;
+                background: rgba(255, 255, 255, 0.29)
+            }
+
+            .Carbon-Wards .pic {
+                width: 50%;
+            }
+
+            .Carbon-Wards .txt {
+                display: flex;
+                flex-direction: column;
+                background: #f6f4ef;
+                position: absolute;
+                top: 50%;
+                left: 65%;
+                transform: translate(-50%, -50%);
+                padding: 20px 50px 20px 25px;
+                width: 50%;
+            }
+
+
+
+
+
+
+        }
+
+        @media screen and (min-width:992px) {
+            .banner-txt h1 {
+                font-size: 4em;
+            }
+
+            .two-col h3::after {
+                width: 30%;
+                top: -.4em;
+                left: 0;
+
+            }
+
+            .placement h3::after {
+                width: 98%;
+            }
+
+            .two-col h3::before {
+                top: -.65em;
+                right: 70%;
+                border-radius: 50%;
+            }
+
+            .placement h3::before {
+                right: 4%;
+            }
+
+            /* ========================= */
+            .two-col h3::after {
+                left: -.5em;
+            }
+
+            .two-col:nth-child(2n) h3::after {
+                top: 32%;
+                left: 61%;
+                width: 40%;
+            }
+
+            .two-col:nth-child(2n) h3::before {
+                top: 17%;
+                left: 61%;
+            }
+
+            .two-col:nth-last-child(-n+2) h3::after {
+                top: 1.5em;
+                left: 0;
+                width: 60%;
+            }
+
+            .two-col:nth-last-child(-n+2) h3::before {
+                display: none;
+            }
+
+            .two-col p {
+                margin-top: .5em;
+            }
+
+            /* =========================== */
+
+            .Carbon {
+                width: 30%;
+            }
+
+            .Carbon {
+                flex-wrap: nowrap;
+            }
+
+            .Carbon>div:nth-child(3) {
+                width: 47%;
+            }
+
+            .teacher {
+                width: 60% !important;
+            }
+
+            .placement {
+                width: 65%;
+            }
+
+            .placement img {
+                border-radius: 20px;
+            }
+
+            .concrete {
+                width: 70%;
+                margin-left: auto;
+                gap: 2em;
+            }
+
+            .concrete .txt p {
+                margin-top: 1.5em;
+            }
+
+            .concrete img {
+                position: relative;
+                top: -18%;
+                border-radius: 20px;
+            }
+
+            .completed {
+                width: 80%;
+                margin-top: -3em;
+            }
+
+            .completed .txt {
+                margin-top: -3em;
+            }
+
+            .completed .txt p {
+                margin-top: 1.5em;
+            }
+
+            .completed img {
+                border-radius: 20px;
+                position: relative;
+                top: -22%;
+            }
+
+            .card-group {
+                justify-content: space-around;
+            }
+
+            .card-group .card:nth-child(2n) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .card {
+                width: 20%;
+            }
+
+            .card-txt {
+                position: relative;
+                padding-bottom: 15em;
+            }
+
+            .card-txt h3 {
+                color: #C65A23;
+                writing-mode: vertical-lr;
+                border-left: 2px solid;
+                padding-left: 5px;
+                position: absolute;
+                top: 4%;
+                font-size: 1em;
+            }
+
+            .card-group .card:nth-child(2n) .card-txt h3 {
+                top: 7%;
+
+            }
+
+            .card-txt h3::after {
+                display: none;
+            }
+
+            .card-txt p {
+                writing-mode: vertical-lr;
+                height: 9em;
+                position: absolute;
+                left: 20%;
+                letter-spacing: .5em;
+                font-size: 1.2em;
+                text-align: left;
+            }
+
+            .Carbon-Wards {
+                position: relative;
+                padding: 9em 0 0 0;
+                background: #F1E8D0;
+            }
+
+            .Carbon-Wards::after {
+                content: '';
+                width: 50%;
+                height: 50%;
+                background: #fcf6e7;
+                position: absolute;
+                top: 32%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .Carbon-Wards .pic,
+            .Carbon-Wards .txt {
+                z-index: 3;
+            }
+
+            .Carbon-Wards .pic {
+                width: 60%;
+            }
+
+            .Carbon-Wards .txt {
+                top: 60%;
+                left: 80%;
+                height: 70%;
+                width: 40%;
+                padding: 1em;
+            }
+
+            .Carbon-Wards .txt h3 {
+                font-size: 1.5em;
+                margin-top: 1em;
+            }
+
+            .Carbon-Wards .txt p {
+                font-size: 1.4em;
+                margin-top: 2em;
+                padding: 0 1em 0 1em;
+                text-align: justify;
+                line-height: 1.5em;
+            }
+        }
+
+        @media screen and (min-width:1200px) {
+            .Carbon-Wards .txt {
+                height: 60%;
+                padding-top: 2.5em;
+            }
+
+            .Carbon-Wards .txt p {
+                line-height: 2em;
+            }
+
+            .banner-txt h1 {
+                font-size: 6em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="banner" style="width: 100%;margin: 6em 0 0 0;padding: 0;">
+        <div class="banner-txt">
+            <h1>Zero</h1>
+            <h1>Carbon</h1>
+            <h1>Wards</h1>
+        </div>
+        <div class="banner-img">
+            <img src="../upload/826/19/img/P1.png">
+        </div>
+    </section>
+
+
+    <section class="container">
+        <div class="two-col Carbon reveal">
+            <div class="pic">
+                <img src="../upload/826/19/img/P3.png">
+            </div>
+            <div class="txt">
+                <h3>零碳節能窩 (Zero Carbon Wards)的誕生</h3>
+                <p>112年4月，工學院 林國良院長
+                    成功申請到新工程C類計畫。為了因應計畫設置的四座「零碳節能窩」，將作為學生實作成果展示與實踐場域。工學院的四個系將各自認養一座「零碳節能窩」，並依照各系的特色展開發展。例如: 化工系 與 材料系
+                    可以相互合作研究隔熱漆；土木系 可以製作綠色建材；機械系 可以利用太陽能等方式。期許能實現「永續工程設計與實踐」計畫的碳中和目標。
+                </p>
+            </div>
+            <div class="pic" style="position: relative;">
+                <img src="../upload/826/19/img/teacher.png" class="teacher">
+            </div>
+        </div>
+
+
+        <div class="two-col birth reveal">
+            <div class="pic">
+                <img src="../upload/826/19/img/p4.png">
+            </div>
+            <div class="txt">
+                <h3>貨櫃基腳的誕生</h3>
+                <p>關於貨櫃基腳的設計是來自於 林國良院長 的發想。院長認為這是讓學生最接近真實工程問題的好時機，於是與機械系顏仲崑老師、土木系 古志生老師、土木系 王偉筑老師 及 土木系 周仕勳老師
+                    共同討論基腳設置、尺寸及大小等問題。最後由 機械系 負責高程調整鈑與止滑墊設計，土木系 負責基腳初步定位及開挖澆置。
+                </p>
+            </div>
+        </div>
+
+        <div class="two-col placement reveal">
+            <div class="pic">
+                <img src="../upload/826/19/img/p5.jpg">
+            </div>
+            <div class="txt">
+                <h3>基腳定位及開挖澆置</h3>
+                <p>融入”探索地工領域”課程，讓學生進行測距、定位、開挖、鋼筋綁扎與模板製作。</p>
+            </div>
+        </div>
+
+        <div class="two-col concrete reveal">
+            <div class="pic">
+                <img src="../upload/826/19/img/p6.jpg">
+            </div>
+            <div class="txt">
+                <h3>混凝土施拌</h3>
+                <p>融入”發現新穎材料”課程，讓學生進行配比設計，利用飛灰、瀝青刨除料進行再生混凝土施拌，強化學生對於永續理念的認知。</p>
+            </div>
+        </div>
+
+        <div class="two-col completed reveal">
+            <div class="pic">
+                <img src="../upload/826/19/img/p7.jpg">
+            </div>
+            <div class="txt">
+                <h3>基腳設置完成</h3>
+                <p>由”發現新穎材料”課程的學生進行混凝土澆置及養護的動作，提升基腳的強度。而高程的細微調整，則使用由 機械系
+                    學生設計完成的高程調整鈑進行修正。另外，為了避免滑動情況，放置了止滑墊。這不僅減少滑動的可能性，也提升外觀，符合以人文設計美學的方案解決問題的理念。</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="card-group">
+        <div class="card reveal">
+            <div class="card-img">
+                <img src="../upload/826/19/img/p8.jpg" alt="">
+            </div>
+            <div class="card-txt">
+                <h3>貨櫃切櫃       </h3>
+                <p>將四十呎貨櫃切對半後，進行牆面焊接及門窗的切割。</p>
+            </div>
+        </div>
+        <div class="card reveal">
+            <div class="card-img">
+                <img src="../upload/826/19/img/p9.jpg" alt="">
+            </div>
+            <div class="card-txt">
+                <h3>裝潢        </h3>
+                <p>內部進行安裝門窗、牆內底樁、面板等。外部噴上防鏽油漆。</p>
+            </div>
+        </div>
+        <div class="card reveal">
+            <div class="card-img">
+                <img src="../upload/826/19/img/p10.jpg" alt="">
+            </div>
+            <div class="card-txt">
+                <h3>裝潢完成       </h3>
+                <p>貨櫃內的面板為可拆式，其目的在於可放入學生自行發想的隔熱材。</p>
+            </div>
+        </div>
+        <div class="card reveal">
+            <div class="card-img">
+                <img src="../upload/826/19/img/p11.jpg" alt="">
+            </div>
+            <div class="card-txt">
+                <h3>貨櫃完成      </h3>
+                <p>確認基腳製作進度，準備進場作業。</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="Zero-Carbon-Wards">
+        <div class="Carbon-Wards">
+            <div class="pic">
+                <img src="../upload/826/19/img/p13.jpg" alt="">
+            </div>
+
+            <div class="txt">
+                <h3>
+                    零碳節能窩 (Zero Carbon Wards)
+                </h3>
+                <p>目前零碳節能窩已完成所有的基礎設置，並為每個貨櫃安裝電表，以隨時記錄使用的電量，觀察節能問題，在計畫中也將與課群實作課結合發展，現在，讓我們一同期待各系貨櫃屋的發展吧!
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="slider">
+        <h2>幕後特輯</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_6.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_7.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_8.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_9.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_10.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_11.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_12.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_13.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../upload/826/19/img/p14_14.jpg" alt=""></div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-button-prev"></div> -->
+        </div>
+    </section>
+
+
+
+
+
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+</body>
+
+
+</html>
