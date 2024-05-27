@@ -1,27 +1,27 @@
 <link rel="stylesheet" href="../newsite/css/new.css" media="screen">
-<!-- <link rel="stylesheet" href="../upload/826/18/code/all_min.css"> -->
-<script src="../upload/826/18/code/card_script.js" defer></script>
-<script src="../upload/826/18/js/jquery_360_min.js" defer></script>
-<script src="../upload/826/18/js/owl_carousel_min.js" defer></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
 
+<!-- 計畫執行團隊 slider -->
+<script src="../upload/826/18/code/card_script.js" defer></script>
+
+<!-- JQuery -->
+<script src="../upload/826/18/js/jquery_360_min.js" defer></script>
+
+
+<!-- boxicon -->
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+<!-- OwlCarousel2 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-
-
-<!-- Link jQuery -->
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-<!-- Link Owl Carousel JS -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+<script src="../upload/826/18/js/owl_carousel_min.js" defer></script>
 
 
 <style>
-    /* Xiang-特色領域 */
+    /* 特色教室與場域 Layout */
+
     #color-change:hover h3,
     #color-change:hover .time {
         color: #fff !important;
@@ -83,14 +83,13 @@
         padding: 0 10px 0 10px;
     }
 
-    /* Xiang-特色領域 */
-
-
     @media (max-width: 575px) {
         .u-section-4 .u-text-7 {
             margin-right: 0 !important;
         }
     }
+
+
 </style>
 
 
@@ -120,19 +119,11 @@
         /* 背景及圖片漸變時間 */
     }
 
-
-
-
     /* Change */
-
     #color-change:hover .u-image-zero_carbon {
         background-image: url('../upload/826/18/homepage_image/container/container.png');
         /* 漸變後的圖片 */
     }
-
-
-
-
 
     .u-container-style-background:not([class*="u-align-"]) {
         text-align: left;
@@ -148,8 +139,6 @@
         transition: background 0.5s ease;
     }
 
-
-
     .shadow-border {
         box-shadow: 5px 5px 10px #888;
         /* 設定陰影，水平偏移量5px，垂直偏移量5px，模糊度10px，顏色#888 */
@@ -164,7 +153,6 @@
         opacity: 0.5s;
         transition: 0.5s;
     }
-
 
     .wrapper {
         max-width: 1100px;
@@ -285,7 +273,6 @@
             grid-auto-columns: 100%;
         }
     }
-
 
     .head01 {
         margin-top: 60px;
@@ -438,18 +425,7 @@
 </div>
 
 
-
-
-
-
-
-
 <div class="head01">苗圃計畫</div>
-
-
-
-
-
 
 <style>
     * {
@@ -467,7 +443,7 @@
     .xiang-content .xiang-txt {
         margin-left: 2em;
         padding: 10px;
-        width:85%;
+        width: 85%;
     }
 
     .xiang-content .xiang-txt h3 {
@@ -530,11 +506,12 @@
             flex-direction: row-reverse;
         }
     }
-@media screen and (min-width:1024px) {
-    .xiang-content .xiang-txt {
-        width:48% !important;
+
+    @media screen and (min-width:1024px) {
+        .xiang-content .xiang-txt {
+            width: 48% !important;
+        }
     }
-}
 </style>
 
 <style>
@@ -616,9 +593,10 @@
     .owl-carousel .owl-nav button.owl-next {
         right: 0;
     }
-.owl-carousel .owl-nav:hover span{
-color:#000
-}
+
+    .owl-carousel .owl-nav:hover span {
+        color: #000
+    }
 
     .owl-dots {
         display: none;
@@ -631,8 +609,9 @@ color:#000
     .owl-theme .owl-nav [class*=owl-]:hover {
         background: none !important;
     }
+
     .xiang-content .xiang-txt {
-        width:85%;
+        width: 85%;
     }
 </style>
 <div class="owl-carousel owl-theme banner-carousel">
@@ -703,24 +682,18 @@ color:#000
         loop: true,
         margin: 10,
         responsiveClass: true,
-        center: true, // 欄位需偶數
+        center: true, 
         startPosition: 'URLHash',
         nav: true,
 
         responsive: {
             0: {
                 items: 1,
-                // nav:true //左右箭頭
             },
             768: {
                 items: 1,
-                // nav:true
+
             },
-            // 1024:{
-            //     items:3,
-            //     nav:true,
-            //     loop:true
-            // }
         }
     });</script>
 
