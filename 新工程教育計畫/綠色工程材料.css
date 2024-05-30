@@ -23,11 +23,22 @@ footer {
     --theme-sheet-width-xs: 100% !important;
     margin: auto;
 }
-body{
+
+body {
     background: #E2F0D9;
 }
-img{
+
+img {
     width: 100%;
 }
 
 /* ------------------------------ */
+.banner {
+    position: relative;
+}
+
+.banner-txt h3 {
+    position: absolute;
+    font-size: 6.5vw;
+    color: #283F19;
+}
