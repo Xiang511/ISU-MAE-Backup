@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    list-style-type: none;
     box-sizing: border-box;
+    list-style-type: none;
 }
 
 .u-align-left.u-container-style.u-layout-cell.u-size-15.u-size-30-md.u-layout-cell-1 {
@@ -25,20 +25,142 @@ footer {
 }
 
 body {
-    background: #E2F0D9;
+    background: #E2F0D9 !important;
 }
 
-img {
+.banner-img img,
+.container img {
     width: 100%;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #283F19;
+    position: relative;
+}
+
+.container p,
+.container ul {
+    margin-left: 1.2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.container ul {
+    margin-bottom: 4em !important;
 }
 
 /* ------------------------------ */
 .banner {
+    margin-top: 6em;
     position: relative;
 }
 
-.banner-txt h3 {
+.banner-txt h1 {
     position: absolute;
     font-size: 6.5vw;
     color: #283F19;
+}
+
+.container {
+    padding: 20px 30px 40px 30px
+}
+
+.container .title {
+    margin-top: 0.5em;
+    margin-left: .4em;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 1.5em;
+    background: #000;
+    left: -12px;
+    top: -2px;
+}
+
+.container p {
+    margin-top: 0.5em;
+}
+
+.list {
+    margin-top: 0.5em;
+    text-indent: -5px;
+    padding-left: 15px;
+}
+
+.list li::before {
+    width: 7px;
+    content: '-';
+    color: green;
+    display: inline-block;
+}
+
+.container img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 4em auto 4em auto;
+}
+
+.container a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    border: 4px #283F19 solid;
+    color: #000;
+    background: #fff;
+    margin-top: 1.2em;
+    margin-left: 0.7em;
+}
+
+.container a:hover {
+    background: green;
+    color: #fff;
+}
+
+@media screen and (min-width:768px) {
+    .container h3 {
+        font-size: 1.8em;
+    }
+
+    .container p {
+        font-size: 1.5em;
+    }
+
+    .container li {
+        font-size: 1.5em;
+    }
+
+    .container a {
+        font-size: 1.5em;
+    }
+
+    .container img {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container h3 {
+        font-size: 2.0em;
+    }
+
+    .container p {
+        font-size: 1.6em;
+    }
+
+    .container li {
+        font-size: 1.6em;
+    }
+
+    .container a {
+        font-size: 1.6em;
+    }
+
+    .container img {
+        width: 50%;
+    }
 }
