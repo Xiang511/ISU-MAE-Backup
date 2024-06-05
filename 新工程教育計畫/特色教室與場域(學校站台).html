@@ -29,21 +29,23 @@
 
         /* 複寫 學校CSS */
         .u-body {
-            --theme-sheet-width-xl: 100% !important;
-            --theme-sheet-width-xl: 100% !important;
-            --theme-sheet-width-lg: 100% !important;
-            --theme-sheet-width-md: 100% !important;
-            --theme-sheet-width-sm: 100% !important;
-            --theme-sheet-width-ms: 100% !important;
-            --theme-sheet-width-xs: 100% !important;
+                --theme-sheet-width-xl: 100% !important;
+            --theme-sheet-width-xl: 80% !important;
+            --theme-sheet-width-lg: 80% !important;
+            --theme-sheet-width-md: 80% !important;
+            --theme-sheet-width-sm: 80% !important;
+            --theme-sheet-width-ms: 80% !important;
+            --theme-sheet-width-xs: 80% !important;
             margin: auto;
         }
 
         /*  防止圖片過大 */
-        .pic img,
+        .pic img{
+width:100%;
+}
         .banner-img img,
         .card-img img {
-            width: 100%;
+            width: 90%;
         }
 
         /* ================== banner區塊 ================================ */
@@ -66,15 +68,15 @@
             margin-bottom: .6em;
             font-size: 3em;
             font-weight: 900;
+            font-family:"Times New Roman"
         }
 
         .banner-img {
             z-index: 0;
             position: relative;
-            right: -10%;
+            right: -18%;
             width: calc(100% - 10%);
             animation: zoom-in 6s ease-in-out 0s;
-            animation-iteration-count: infinite;
         }
 
         /* banner animation */
@@ -83,12 +85,8 @@
                 transform: scale(0.95);
             }
 
-            50% {
-                transform: scale(1);
-            }
-
             100% {
-                transform: scale(0.95);
+                transform: scale(1);
             }
         }
 
@@ -344,9 +342,11 @@
                 flex-wrap: wrap;
             }
 
-            .Carbon>div {
+            /*
+             .Carbon>div {
                 width: 47%;
             }
+            */
 
             .Carbon>div:nth-child(3) {
                 width: 100%;
@@ -462,6 +462,7 @@
 
             .Carbon {
                 flex-wrap: nowrap;
+                padding-top:7em;
             }
 
             .Carbon>div:nth-child(3) {
@@ -469,7 +470,9 @@
             }
 
             .teacher {
-                width: 60% !important;
+                width: 55% !important;
+                position:relative;
+                top:-6em;
             }
 
             .placement {
@@ -624,6 +627,27 @@
                 font-size: 6em;
             }
         }
+         @media screen and (min-width: 1440px) {
+            .two-col p {
+                line-height: 2em;
+            }
+            .birth .txt p{
+                width: 90%;
+                margin: 2em 0 0 3em;
+            }
+
+
+            .Zero-Carbon-Wards .pic img {
+            
+                width: 85%;
+                margin: 0 0 0 8.5em;
+
+            }
+            .Carbon .txt{
+                width: 56%;
+            }
+        }
+}
     </style>
 </head>
 
@@ -642,7 +666,7 @@
 
 
     <section class="container">
-        <div class="two-col Carbon reveal">
+        <div class="two-col Carbon ">
             <div class="pic">
                 <img src="../upload/826/19/img/P3.png">
             </div>
@@ -806,25 +830,35 @@
 
     <!-- reveal 淡入動畫 -->
     <script>
-        window.addEventListener('scroll', reveal);
+       window.addEventListener('scroll', revealOnce);
 
-        function reveal() {
-            var reveals = document.querySelectorAll('.reveal');
+function revealOnce() {
+  const reveals = document.querySelectorAll('.reveal');
+  const alreadyRevealed = new Set(); // Track elements that have been revealed
 
-            for (var i = 0; i < reveals.length; i++) {
+  for (let i = 0; i < reveals.length; i++) {
+    const element = reveals[i];
 
-                var windowheight = window.innerHeight;
-                var revealtop = reveals[i].getBoundingClientRect().top;
-                var revealpoint = 150;
+    if (alreadyRevealed.has(element)) {
+      continue; // Skip elements already revealed
+    }
 
-                if (revealtop < windowheight - revealpoint) {
-                    reveals[i].classList.add('active');
-                }
-                else {
-                    reveals[i].classList.remove('active');
-                }
-            }
-        }
+    const windowHeight = window.innerHeight;
+    const revealTop = element.getBoundingClientRect().top;
+    const revealPoint = 150;
+
+    if (revealTop < windowHeight - revealPoint) {
+      element.classList.add('active');
+      alreadyRevealed.add(element); // Mark element as revealed
+    }
+  }
+
+  // Optionally remove event listener after all elements are revealed
+  // (uncomment if desired)
+  // if (alreadyRevealed.size === reveals.length) {
+  //   window.removeEventListener('scroll', revealOnce);
+  // }
+}
     </script>
 </body>
 
