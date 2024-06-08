@@ -29,7 +29,7 @@
 
         /* 複寫 學校CSS */
         .u-body {
-                --theme-sheet-width-xl: 100% !important;
+            --theme-sheet-width-xl: 100% !important;
             --theme-sheet-width-xl: 80% !important;
             --theme-sheet-width-lg: 80% !important;
             --theme-sheet-width-md: 80% !important;
@@ -40,12 +40,17 @@
         }
 
         /*  防止圖片過大 */
-        .pic img{
-width:100%;
-}
+        .pic img {
+            width: 100%;
+        }
+
         .banner-img img,
         .card-img img {
             width: 90%;
+        }
+
+        h3 {
+            font-size: 1.5rem;
         }
 
         /* ================== banner區塊 ================================ */
@@ -68,7 +73,7 @@ width:100%;
             margin-bottom: .6em;
             font-size: 3em;
             font-weight: 900;
-            font-family:"Times New Roman"
+            font-family: "Times New Roman"
         }
 
         .banner-img {
@@ -292,7 +297,7 @@ width:100%;
 
 
         /* 媒體查詢 */
-        
+
         @media screen and (min-width:767px) {
             .two-col {
                 display: flex;
@@ -300,7 +305,7 @@ width:100%;
             }
 
             .two-col>div {
-                width: 50%;
+                width: 45%;
             }
 
             .two-col:nth-child(1),
@@ -462,7 +467,7 @@ width:100%;
 
             .Carbon {
                 flex-wrap: nowrap;
-                padding-top:7em;
+                padding-top: 7em;
             }
 
             .Carbon>div:nth-child(3) {
@@ -471,8 +476,8 @@ width:100%;
 
             .teacher {
                 width: 55% !important;
-                position:relative;
-                top:-6em;
+                position: relative;
+                top: -6em;
             }
 
             .placement {
@@ -627,27 +632,49 @@ width:100%;
                 font-size: 6em;
             }
         }
-         @media screen and (min-width: 1440px) {
+
+        @media screen and (min-width: 1440px) {
             .two-col p {
                 line-height: 2em;
             }
-            .birth .txt p{
+
+            .birth .txt p {
                 width: 90%;
                 margin: 2em 0 0 3em;
             }
 
 
             .Zero-Carbon-Wards .pic img {
-            
+
                 width: 85%;
                 margin: 0 0 0 8.5em;
 
             }
-            .Carbon .txt{
+
+            .Carbon .txt {
                 width: 56%;
             }
+
+            .teacher {
+                animation: moveInLeft 1s ease-out;
+                animation-duration: 3s;
+            }
+
+            @keyframes moveInLeft {
+                0% {
+                    opacity: 0;
+                    transform: translateX(100px);
+                    scale: 0.8;
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(0);
+                    scale: 1;
+                }
+            }
         }
-}
+        }
     </style>
 </head>
 
@@ -830,35 +857,35 @@ width:100%;
 
     <!-- reveal 淡入動畫 -->
     <script>
-       window.addEventListener('scroll', revealOnce);
+        window.addEventListener('scroll', revealOnce);
 
-function revealOnce() {
-  const reveals = document.querySelectorAll('.reveal');
-  const alreadyRevealed = new Set(); // Track elements that have been revealed
+        function revealOnce() {
+            const reveals = document.querySelectorAll('.reveal');
+            const alreadyRevealed = new Set(); // Track elements that have been revealed
 
-  for (let i = 0; i < reveals.length; i++) {
-    const element = reveals[i];
+            for (let i = 0; i < reveals.length; i++) {
+                const element = reveals[i];
 
-    if (alreadyRevealed.has(element)) {
-      continue; // Skip elements already revealed
-    }
+                if (alreadyRevealed.has(element)) {
+                    continue; // Skip elements already revealed
+                }
 
-    const windowHeight = window.innerHeight;
-    const revealTop = element.getBoundingClientRect().top;
-    const revealPoint = 150;
+                const windowHeight = window.innerHeight;
+                const revealTop = element.getBoundingClientRect().top;
+                const revealPoint = 150;
 
-    if (revealTop < windowHeight - revealPoint) {
-      element.classList.add('active');
-      alreadyRevealed.add(element); // Mark element as revealed
-    }
-  }
+                if (revealTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                    alreadyRevealed.add(element); // Mark element as revealed
+                }
+            }
 
-  // Optionally remove event listener after all elements are revealed
-  // (uncomment if desired)
-  // if (alreadyRevealed.size === reveals.length) {
-  //   window.removeEventListener('scroll', revealOnce);
-  // }
-}
+            // Optionally remove event listener after all elements are revealed
+            // (uncomment if desired)
+            // if (alreadyRevealed.size === reveals.length) {
+            //   window.removeEventListener('scroll', revealOnce);
+            // }
+        }
     </script>
 </body>
 
