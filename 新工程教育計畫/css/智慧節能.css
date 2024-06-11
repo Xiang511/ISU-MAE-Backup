@@ -36,6 +36,52 @@ h3{
     color: #203864;
 }
 /* ========================================== */
+
+.banner-sec {
+    position: relative;
+    padding-bottom: 12em;
+    margin-top: 6em;
+}
+.banner-sec .banner-txt{
+    font-size: 6.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+}
+.banner-txt h3{
+    margin-top: 3em;
+    font-size: 1.1em;
+}
+.banner-txt b{
+    font-size: 1.5em;
+}
+
+.banner-img img{
+    width: 60%;
+}
+img[alt="pic1"] {
+    position: absolute;
+    left: -31%;
+    top: 34%;
+    transform: rotateZ(-1deg);
+}
+img[alt="pic2"] {
+    position: absolute;
+    width: 100%;
+    top: 4em;
+
+}
+img[alt="pic3"] {
+    position: absolute;
+    top: 2em;
+    left: 74%;
+    transform: rotateZ(-54deg);
+
+}
+/* ------------------------------------------ */
 .goal,
 .knowledge{
     padding: 20px;
@@ -103,6 +149,12 @@ h3{
     display: inline-block;
 }
 
+@media screen and (min-width:768px){
+    .banner-txt h3{
+        margin-top: 2em;
+        font-size: 1.1em;
+    }   
+}
 @media screen and (min-width:992px) {
 
     .goal h3,
@@ -120,6 +172,7 @@ h3{
 
 
     .goal{
+        padding-top: 10%;
         padding-bottom: 4%;
     }
     .list{
