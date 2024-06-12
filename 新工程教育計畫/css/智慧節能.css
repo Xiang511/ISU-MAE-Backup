@@ -148,12 +148,46 @@ img[alt="pic3"] {
     color: green;
     display: inline-block;
 }
+.pic-group{
+    width: 100%;
+    margin: auto;
+}
+.pic-group img{
+    width: 100%;
+    aspect-ratio: 4/3;
+    
+}
+.pic-txt p{
+    text-align: center;
+    font-size: 1.1em;
+}
+.pic-txt p::before{
+    content: '▲';
+    margin-right: 0.5em;
+}
 
 @media screen and (min-width:768px){
     .banner-txt h3{
         margin-top: 2em;
         font-size: 1.1em;
     }   
+    .pic-group.flex,
+    .pic-group.flex,
+    .pic-group.flex{
+        display: flex;
+        gap: 20px;
+    }
+    .flex .pic{
+        width: 48%;
+    }
+    .wrap{
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .wrap .pic:nth-child(3) img,
+    .wrap .pic:nth-child(4) img{
+        padding-top: 0;;
+    }
 }
 @media screen and (min-width:992px) {
 
@@ -179,7 +213,11 @@ img[alt="pic3"] {
         font-size: 1.3em;
         margin-left: 3em;
     }
+    .pic-group{
+        width: 80%;
+        margin: auto;
     
+    }
    
 }
 @media screen and (min-width:1200px){
@@ -196,7 +234,7 @@ img[alt="pic3"] {
         font-size: 1.6em;
     }
 
-    .knowledge img{
+    .knowledge img:nth-child(2){
         display: flex;
         width: 60%;
         margin: auto;
