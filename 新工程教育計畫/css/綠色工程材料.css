@@ -57,6 +57,26 @@ h3 {
 .bg img{
     width: 100%;
 }
+.vid {
+    background: #E2F0D9;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    animation: fadeOut 4s;
+    animation-delay: 5s;
+}
+
+.vid video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /* ------------------------------ */
 .banner {
     margin-top: 6em;
@@ -214,5 +234,20 @@ h3 {
     }
     .container{
         margin-top: 3em;
+    }
+    .vid video {
+        width: 26%;
+    }
+}
+
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }

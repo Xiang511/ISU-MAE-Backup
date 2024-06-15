@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <div class="vid">
+        <video src="img/vid.mp4" autoplay muted></video>
+    </div>
     <div class="banner" style="width: 100%;margin: 6em 0 0 0;padding: 0;">
         <div class="banner-txt">
             <h1>綠色工程材料</h1>
@@ -44,5 +47,9 @@
         <a href="#">電腦輔助設計</a>
     </div>
 </body>
-
+<script>
+    document.querySelector('.vid').addEventListener('animationend', function() {
+    this.style.display = 'none';
+});
+</script>
 </html>
