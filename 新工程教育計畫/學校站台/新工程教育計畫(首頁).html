@@ -20,14 +20,26 @@
 
 
 <style>
-    /* 特色教室與場域 Layout */
+    * {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+
+
+    /* 零碳節能窩(Zero Carbon Wards)的實作場域位置-hsiang */
+    /*    
+        ## what's change
+        1.新增日期 
+        2.新增按鈕   
+    */
 
     #color-change:hover h3,
     #color-change:hover .time {
         color: #fff !important;
         transition: 250ms ease;
     }
-
 
     .time {
         text-align: right;
@@ -71,13 +83,11 @@
         scale: 1.1
     }
 
-
     .new-page {
         display: flex;
         justify-content: flex-end;
         font-weight: bold;
     }
-
 
     #btn p {
         padding: 0 10px 0 10px;
@@ -89,11 +99,16 @@
         }
     }
 
+    /* 零碳節能窩(Zero Carbon Wards)的實作場域位置-hsiang */
 
-</style>
 
 
-<Style type="text/css">
+
+
+
+    /* 零碳節能窩(Zero Carbon Wards)的實作場域位置 */
+
+    /* 背景及圖片漸變時間 */
     .u-section-4 .u-image-1 {
         background-image: url(../upload/826/18/homepage_image/smart_factory1.jpg);
     }
@@ -116,13 +131,15 @@
         height: auto !important;
         background-size: cover;
         transition: background 0.5s ease;
-        /* 背景及圖片漸變時間 */
     }
 
-    /* Change */
+    /* 背景及圖片漸變時間 */
+
+
+    /* 漸變後圖片 */
     #color-change:hover .u-image-zero_carbon {
         background-image: url('../upload/826/18/homepage_image/container/container.png');
-        /* 漸變後的圖片 */
+
     }
 
     .u-container-style-background:not([class*="u-align-"]) {
@@ -144,16 +161,9 @@
         /* 設定陰影，水平偏移量5px，垂直偏移量5px，模糊度10px，顏色#888 */
     }
 
-    .color-word {
-        color: rgb(131, 239, 249);
-    }
 
-    .color-word:hover {
-        color: hsla(183, 85%, 57%, 0.639);
-        opacity: 0.5s;
-        transition: 0.5s;
-    }
 
+    /* 計畫執行團隊 */
     .wrapper {
         max-width: 1100px;
         width: 100%;
@@ -277,15 +287,141 @@
     .head01 {
         margin-top: 60px;
     }
-</style>
 
+    /* 計畫執行團隊 */
 
+    /* 苗圃計畫 layout */
 
-<script>
-    function createNewPage(web) {
-        window.open(web, "_blank");
+    .xiang-content {
+        margin-top: .5em;
+        box-shadow: 5px 5px 10px #888;
     }
-</script>
+
+    .xiang-content .xiang-txt {
+        margin-left: 2em;
+        padding: 10px;
+        width: 85%;
+    }
+
+    .xiang-content .xiang-txt h3 {
+        margin-top: 1.3em;
+        color: rgb(0, 32, 96);
+    }
+
+    .xiang-content .xiang-txt p {
+        margin-top: 2.5em;
+        font-size: 1em;
+    }
+
+    .xiang-mv {
+        margin-top: 1em;
+        width: 100%;
+        aspect-ratio: 560/315;
+    }
+
+    .xiang-mv iframe {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+    }
+
+    @media screen and (min-width:768px) {
+        .xiang-container {
+            display: flex;
+            position: relative;
+            margin-top: 2em;
+        }
+
+        .xiang-container .xiang-item {
+            width: 40%;
+            height: 50vh;
+            background: #fff;
+        }
+
+        .xiang-container .xiang-item:nth-child(2) {
+            width: 60%;
+            background: rgb(211, 250, 246);
+        }
+
+        .xiang-content {
+            width: 100%;
+            margin: auto;
+            position: absolute;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: none;
+        }
+
+        .xiang-mv {
+            width: 100%;
+            aspect-ratio: 560/315;
+        }
+
+        .flex-reverse {
+            flex-direction: row-reverse;
+        }
+    }
+
+    @media screen and (min-width:1024px) {
+        .xiang-content .xiang-txt {
+            width: 48% !important;
+        }
+    }
+
+    /* owl */
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+        position: absolute;
+        top: 0;
+        bottom: 40px;
+        width: 40px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        left: 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        right: 0;
+    }
+
+    .owl-carousel .owl-nav:hover span {
+        color: #000
+    }
+
+    .owl-dots {
+        display: none;
+    }
+
+    .owl-nav span {
+        font-size: 2em;
+    }
+
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background: none !important;
+    }
+    /* 苗圃計畫 layout */
+
+
+    /* 四大主題式客群 按鈕 */
+    .learnmore {
+        color: #fff;
+        background: blue;
+        border-radius: 26px;
+        padding: 10px 22px;
+    }
+
+    a.learnmore:hover {
+        color: #000;
+        background: #fff;
+        border: 1px solid blue
+    }
+    /* 四大主題式客群 按鈕 */
+</style>
 
 
 
@@ -424,196 +560,15 @@
         永續材料實驗實作   </button>
 </div>
 
+<!-- 新工程計畫推動與相關連結 -->
+<script>
+    function createNewPage(web) {
+        window.open(web, "_blank");
+    }
+</script>
 
 <div class="head01">苗圃計畫</div>
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        font-weight: bold;
-        box-sizing: border-box;
-    }
-
-    .xiang-content {
-        margin-top: .5em;
-        box-shadow: 5px 5px 10px #888;
-    }
-
-    .xiang-content .xiang-txt {
-        margin-left: 2em;
-        padding: 10px;
-        width: 85%;
-    }
-
-    .xiang-content .xiang-txt h3 {
-        margin-top: 1.3em;
-        color: rgb(0, 32, 96);
-    }
-
-    .xiang-content .xiang-txt p {
-        margin-top: 2.5em;
-        font-size: 1em;
-    }
-
-    .xiang-mv {
-        margin-top: 1em;
-        width: 100%;
-        aspect-ratio: 560/315;
-    }
-
-    .xiang-mv iframe {
-        width: 100%;
-        height: 100%;
-        vertical-align: top;
-    }
-
-    @media screen and (min-width:768px) {
-        .xiang-container {
-            display: flex;
-            position: relative;
-            margin-top: 2em;
-        }
-
-        .xiang-container .xiang-item {
-            width: 40%;
-            height: 50vh;
-            background: #fff;
-        }
-
-        .xiang-container .xiang-item:nth-child(2) {
-            width: 60%;
-            background: rgb(211, 250, 246);
-        }
-
-        .xiang-content {
-            width: 100%;
-            margin: auto;
-            position: absolute;
-            display: flex;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            box-shadow: none;
-        }
-
-        .xiang-mv {
-            width: 100%;
-            aspect-ratio: 560/315;
-        }
-
-        .flex-reverse {
-            flex-direction: row-reverse;
-        }
-    }
-
-    @media screen and (min-width:1024px) {
-        .xiang-content .xiang-txt {
-            width: 48% !important;
-        }
-    }
-</style>
-
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        font-weight: bold;
-        box-sizing: border-box;
-    }
-
-
-    .xiang-content .xiang-txt {
-        margin-left: 2em;
-    }
-
-    .xiang-content .xiang-txt h3 {
-        margin-top: 1em;
-        color: rgb(0, 32, 96);
-    }
-
-    .xiang-content .xiang-txt p {
-        margin-top: 2.5em;
-        font-size: 1em;
-    }
-
-    .xiang-mv {
-        width: 100%;
-        aspect-ratio: 560/315;
-    }
-
-    .xiang-mv iframe {
-        width: 100%;
-        height: 100%;
-        vertical-align: top;
-    }
-
-    @media screen and (min-width:768px) {
-        .xiang-container {
-            display: flex;
-            position: relative;
-        }
-
-        .xiang-container .xiang-item {
-            width: 40%;
-            height: 50vh;
-            background: #fff;
-        }
-
-        .xiang-container .xiang-item:nth-child(2) {
-            width: 60%;
-            background: rgb(211, 250, 246);
-        }
-
-        .xiang-content {
-            width: 80%;
-            margin: auto;
-            position: absolute;
-            display: flex;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-
-    .owl-carousel .owl-nav button.owl-prev,
-    .owl-carousel .owl-nav button.owl-next {
-        position: absolute;
-        top: 0;
-        bottom: 40px;
-        width: 40px;
-        margin: 0;
-        border-radius: 0;
-    }
-
-    .owl-carousel .owl-nav button.owl-prev {
-        left: 0;
-    }
-
-    .owl-carousel .owl-nav button.owl-next {
-        right: 0;
-    }
-
-    .owl-carousel .owl-nav:hover span {
-        color: #000
-    }
-
-    .owl-dots {
-        display: none;
-    }
-
-    .owl-nav span {
-        font-size: 2em;
-    }
-
-    .owl-theme .owl-nav [class*=owl-]:hover {
-        background: none !important;
-    }
-
-    .xiang-content .xiang-txt {
-        width: 85%;
-    }
-</style>
 <div class="owl-carousel owl-theme banner-carousel">
     <div class="slider-pic">
         <div class="xiang-container">
@@ -682,7 +637,7 @@
         loop: true,
         margin: 10,
         responsiveClass: true,
-        center: true, 
+        center: true,
         startPosition: 'URLHash',
         nav: true,
 
@@ -695,23 +650,11 @@
 
             },
         }
-    });</script>
-
-
-<!-- <div class="u-clearfix u-sheet u-sheet-1" style="margin-top: 30px;text-align: center;">
-  <a href="https://www.neemec.org.tw/" class="u-btn-1 u-btn-buttom">教育部新工程計畫</a>
-  <a href="http://140.133.40.3/ieetcivil.html" class="u-btn-1 u-btn-buttom">課程架構翻轉</a>
-  <a href="http://140.133.40.3/ieetcivil.html" class="u-btn-1 u-btn-buttom">108學年度計畫進程</a>
-</div> -->
-
-<!--分欄網頁設定-->
-
-
-
+    });
+</script>
 
 <div class="head01">特色教室與場域</div>
 
-<!-- <div class="u-clearfix u-sheet u-valign-bottom-sm u-sheet-1"> -->
 <section class="u-align-center u-clearfix u-section-4" id="carousel_97cf">
     <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-disable-padding u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
@@ -753,9 +696,6 @@
 <!-- </div>  -->
 
 <div id="sec-5c26" class="skrollable u-align-center u-clearfix u-section-5">
-    <!-- <h4
-    class="u-align-center-sm u-align-justify-lg u-align-justify-md u-align-justify-xl u-align-right-xs u-text u-text-2">
-  </h4> -->
     <div class="u-clearfix u-sheet u-valign-bottom-sm u-valign-middle-xs u-sheet-1">
         <div class="u-expanded-width u-layout-horizontal u-list u-list-1">
             <div class="u-repeater u-repeater-1">
@@ -868,7 +808,7 @@
 <div class="u-clearfix u-sheet u-valign-bottom-sm u-sheet-1">
     <section class="u-align-center u-clearfix u-section-4" id="carousel_97cf">
         <div class="u-clearfix u-sheet u-sheet-1">
-            <div class="u-align-center u-text u-text-1">▲四大主題式課群▼</div>
+            <div class="u-align-center u-text u-text-1">▲ 四大主題式課群 ▼</div>
             <div class="u-clearfix u-disable-padding u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
                 <div class="u-gutter-0 u-layout">
                     <div class="u-layout-col">
@@ -889,23 +829,9 @@
                                             引領學生探索綠色工程材料，學習傳統土木材料如何與現今永續與再生材料進行結合，除以試驗方式進行低碳混擬土評估，更跨域結合機械系常用應力分析軟體進行數值分析。
                                         </p>
                                         <div style="display:flex;justify-content:flex-end;margin-top:3em">
-                                            <a class="learnmore" href="https://www.isu.edu.tw/newsite/showpage.php?dept_mno=826&dept_id=-1&page_id=52449">了解更多</a>
+                                            <a class="learnmore"
+                                                href="https://www.isu.edu.tw/newsite/showpage.php?dept_mno=826&dept_id=-1&page_id=52449">了解更多</a>
                                         </div>
-                                             <style>
-                                                       .learnmore{
-                                                          color:#fff;
-                                                          background:blue;
-                                                          border-radius:26px;
-                                                          padding:10px 22px;
-                                                        }
-
-                                                        a.learnmore:hover{
-                                                          color:#000;
-                                                          background:#fff;
-                                                          border:1px solid blue
-                                                        }
-                                             </style>
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -921,8 +847,9 @@
                                         <p class="u-align-left u-text u-text-4">
                                             透過設計與思考，在化工及材料科技能源轉型之應用與安全性做設計，藉由實作進階了解高分子材料轉型生質高分子材料及綠色能源加工原理、節能技術與應用並達到永續的發展，以實踐節能議題，進而減少環境問題。
                                         </p>
-<div style="display:flex;justify-content:flex-end;margin-top:3em">
-                                            <a class="learnmore" href="https://www.isu.edu.tw/newsite/showpage.php?dept_mno=826&dept_id=22&page_id=52471">了解更多</a>
+                                        <div style="display:flex;justify-content:flex-end;margin-top:3em">
+                                            <a class="learnmore"
+                                                href="https://www.isu.edu.tw/newsite/showpage.php?dept_mno=826&dept_id=22&page_id=52471">了解更多</a>
                                         </div>
                                     </div>
                                 </div>
@@ -948,7 +875,8 @@
                                         <p class="u-align-left u-text u-text-6">
                                             讓學生透過虛實整合五階段教學模式，熟悉多功智慧機械基本原理與操作，進而導入產品元件的製作流程設計與評估，最後透過最佳製程的規劃，製作出符合低碳製造之產品。
                                         </p>
-                                        <a class="learnmore" href="https://www.isu.edu.tw/newsite/showpage.php?dept_mno=826&dept_id=23&page_id=52473">了解更多</a>
+                                        <a class="learnmore"
+                                            href="https://www.isu.edu.tw/newsite/showpage.php?dept_mno=826&dept_id=23&page_id=52473">了解更多</a>
                                     </div>
                                 </div>
                             </div>
@@ -964,8 +892,9 @@
                                         <p class="u-align-left u-text u-text-4">
                                             結合環境工程學，深入淺出講解關於水污染、空氣污染與廢棄物等關鍵議題與對策，接著導入綠建築理念，最後以零碳節能窩進行碳足跡分析實作，計算產品基礎碳排量來探索最具性價比之綠建築策略。
                                         </p>
-<div style="display:flex;justify-content:flex-end;margin-top:3em">
-                                            <a class="learnmore" href="https://www.isu.edu.tw/newsite/showpage.php?dept_mno=826&dept_id=21&page_id=52457">了解更多</a>
+                                        <div style="display:flex;justify-content:flex-end;margin-top:3em">
+                                            <a class="learnmore"
+                                                href="https://www.isu.edu.tw/newsite/showpage.php?dept_mno=826&dept_id=21&page_id=52457">了解更多</a>
                                         </div>
                                     </div>
                                 </div>
