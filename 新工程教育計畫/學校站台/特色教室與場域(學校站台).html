@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <style>
-        /* footer padding設定 */
-        .u-align-left.u-container-style.u-layout-cell.u-size-15.u-size-30-md.u-layout-cell-1 {
-            padding-left: 1.2em;
-        }
-
         /* footer margin設定 */
         footer {
             margin-top: 0 !important;
@@ -58,6 +53,9 @@
         .banner {
             position: relative;
             background: #fcf6e7;
+            width: 100%;
+            margin: 6em 0 0 0;
+            padding: 0;
         }
 
         .banner-txt {
@@ -194,6 +192,19 @@
             font-weight: 700;
         }
 
+        /* 圖片淡入特效 */
+        .reveal {
+            position: relative;
+            transform: translateY(150px);
+            opacity: 0;
+            transition: all 2s ease;
+        }
+
+        .reveal.active {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+
         /* =================== container區塊 ======================= */
 
         /* =================== 零碳節能窩 (Zero Carbon Wards) 區塊 ===================  */
@@ -235,47 +246,16 @@
             display: inline-block;
         }
 
-        .xiang-carousel {
-            margin-top: 2em;
-        }
-
-        .owl-dots {
-            display: none;
-        }
-
         .teacher {
             width: 50% !important;
             display: block;
             margin: auto;
         }
 
-        /* 圖片淡入特效 */
-        .reveal {
-            position: relative;
-            transform: translateY(150px);
-            opacity: 0;
-            transition: all 2s ease;
-        }
-
-        .reveal.active {
-            transform: translateY(0px);
-            opacity: 1;
-        }
-
-        .slider {
-            background: #F1E8D0;
-            padding: 15px;
-        }
-
-        .slider h2 {
-            color: #970719;
-            border-bottom: 2px#970719 solid;
-            display: inline-block;
-        }
+        /* swiper.js */
 
         .swiper-container {
             width: 90%;
-            /* height: 100%; */
             margin-top: 2em;
         }
 
@@ -347,11 +327,6 @@
                 flex-wrap: wrap;
             }
 
-            /*
-             .Carbon>div {
-                width: 47%;
-            }
-            */
 
             .Carbon>div:nth-child(3) {
                 width: 100%;
@@ -395,11 +370,6 @@
                 padding: 20px 50px 20px 25px;
                 width: 50%;
             }
-
-
-
-
-
 
         }
 
@@ -660,6 +630,7 @@
                 animation-duration: 3s;
             }
 
+            /* 老師向左移動 */
             @keyframes moveInLeft {
                 0% {
                     opacity: 0;
@@ -674,13 +645,12 @@
                 }
             }
         }
-        }
     </style>
 </head>
 
 <body>
 
-    <section class="banner" style="width: 100%;margin: 6em 0 0 0;padding: 0;">
+    <section class="banner">
         <div class="banner-txt">
             <h1>Zero</h1>
             <h1>Carbon</h1>
@@ -856,6 +826,7 @@
     </script>
 
     <!-- reveal 淡入動畫 -->
+
     <script>
         window.addEventListener('scroll', revealOnce);
 
@@ -879,12 +850,6 @@
                     alreadyRevealed.add(element); // Mark element as revealed
                 }
             }
-
-            // Optionally remove event listener after all elements are revealed
-            // (uncomment if desired)
-            // if (alreadyRevealed.size === reveals.length) {
-            //   window.removeEventListener('scroll', revealOnce);
-            // }
         }
     </script>
 </body>
